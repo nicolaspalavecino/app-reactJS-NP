@@ -1,0 +1,80 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20vh;
+    background-color: black;
+    color: white;
+}
+
+.titulo-container {
+    height: 20vh;
+}
+
+.logo-caldero {
+    height: 100%;
+    object-fit: contain;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1vw;
+}
+
+.navbar-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    color: #A98754;
+    padding: 2vh;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.nav-link:hover {
+    border: solid 1px #A98754;
+    color: white;
+    font-weight: bold;
+}
+
+.hamburger-menu {
+    height: 12vh;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: solid 1px #A98754;
+}
+
+.hamburger-menu img {
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .navbar-container ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vh;
+        background-color: rgba(0, 0, 0, 0.795);
+        width: 100%;
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        /* align-items: stretch; */
+        height: 30vh;
+    }
+
+    .navbar-container li {
+        padding-left: 2vh;
+    }
+    
+}
