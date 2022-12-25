@@ -1,0 +1,7 @@
+.inicio {
+    background-color: rgb(177, 177, 142);
+    width: 100%;
+    height: 80vh;
+    z-index: -2;
+    position: absolute;
+}

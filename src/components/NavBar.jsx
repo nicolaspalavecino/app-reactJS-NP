@@ -4,7 +4,6 @@ import LogoCalderoHumeante from '../img/LogoCalderoHumeante.png';
 import { useState } from 'react';
 import { ImCross } from 'react-icons/im';
 import { ImMenu } from 'react-icons/im';
-// import LogoCanasta from '../img/LogoCanasta.png'
 import Canasta from './Canasta';
 
 const NavBar = () => {
