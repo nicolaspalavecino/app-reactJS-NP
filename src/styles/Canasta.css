@@ -1,0 +1,23 @@
+button.chakra-button.btn-canasta.css-i857na {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-canasta img {
+    height: 10vh;
+}
+
+.chakra-modal__content.css-19tsro {
+    background-color: #A98754;
+}
+
+.chakra-modal__header.css-9fgtzh {
+    font-family: 'Crimson Text', serif;
+    color: white;
+    border-bottom: 1px dashed white;
+    padding: 15px;
+
+}
