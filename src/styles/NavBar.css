@@ -39,6 +39,10 @@ nav {
     cursor: pointer;
 }
 
+.nav-link.active {
+    color: rgb(194, 189, 189);
+}
+
 .nav-link:hover {
     border-bottom: solid 3px #A98754;
     color: white;
