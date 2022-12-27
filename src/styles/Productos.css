@@ -1,7 +1,56 @@
+.productos-page {
+    width: 100%;
+    z-index: -2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
 .productos {
     background-color: rgb(179, 179, 50);
     width: 100%;
-    height: 80vh;
-    z-index: -2;
-    position: absolute;
 }
+
+.productos-container {
+    background-color: rgb(233, 47, 78);
+    padding: 3vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.card-container {
+    background-color: rgb(212, 212, 194);
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.card-image-container {
+    height: 50%;
+}
+
+.card-image-container img {
+    object-fit: contain;
+    height: 100%;
+}
+
+
+
+    /* <div className='card-container'>
+        <div className='card-image-container'>
+            <img src="" alt="" />
+        </div>
+        <h3 className='card-nombre'>Nombre producto</h3>
+        <h4 className='card-precio'>Precio $$$</h4>
+        <div className='card-descript-conatiner'>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolor quidem quos officiis quo ipsa asperiores minima voluptatum ab dolore debitis, dolorum aliquid enim laboriosam deserunt similique magni. Ex, provident.</p>
+        </div>
+    </div>
+*/

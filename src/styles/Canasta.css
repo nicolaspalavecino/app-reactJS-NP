@@ -21,3 +21,14 @@ button.chakra-button.btn-canasta.css-i857na {
     padding: 15px;
 
 }
+
+.item-cart-count {
+    color: whitesmoke;
+    background-color: #886d46;
+    border-radius: 50%;
+    width: 20px;
+    z-index: 10;
+    position: absolute;
+    top: -7px;
+    right: 8px;
+}

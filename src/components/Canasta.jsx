@@ -10,6 +10,7 @@ const Canasta = () => {
       <>
         <Button onClick={onOpen} className='btn-canasta'>
             <img src={LogoCanasta} />
+            <span className='item-cart-count'>1</span>
         </Button>
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
