@@ -1,23 +1,19 @@
 import '../styles/Productos.css'
-import { useState } from 'react'
-import items from '../../items.json'
 
-const ProductCard = () => {
+const ProductCard = ({ productos }) => {
 
-    const [item, setItem] = useState([])
-    
     return (
         <div className='productos-container'>
-        {items.map((item, index) => {
+        {productos.map((producto, index) => {
             return (
             <div key={index} className='card-container'>
-                <h3 className='card-nombre'>{item.nombre}</h3>
+                <h3 className='card-nombre'>{producto.nombre}</h3>
                 <div className='card-image-container'>
-                    <img src={item.imagen} />
+                    <img src={producto.imagen} />
                 </div>
-                <h4 className='card-precio'>${item.precio}</h4>
+                <h4 className='card-precio'>$ {producto.precio}</h4>
                 <div className='card-descript-conatiner'>
-                    <p>{item.descript}</p>
+                    <p>{producto.descript}</p>
                 </div>
                 <button className='btn-add-product'>
                     <p>+ CANASTA</p>

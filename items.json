@@ -2,322 +2,401 @@
   {
     "nombre": "Acónito",
     "precio": 500,
-    "tipo": "ingrediente",
-    "descript": "250 g | Aunque sus hojas son tóxicas, las flores se suele utilizar para la poción Matalobos y la poción de Despertares.", 
+    "categoria": "Ingredientes",
+    "descript": "250 g | Aunque sus hojas son tóxicas, las flores se suele utilizar para la Pociones Matalobos y la Pociones de Despertares.", 
     "imagen": "./src/img/ingredients/Acónito.png"
   },
   {
     "nombre": "Agua de Río Lethe",
     "precio": 2500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "100 mL | El Lethe es un río cuya locación no debe ser revelada, pero su agua posee propiedades que inducen pérdida de la memoria.",
     "imagen": "./src/img/ingredients/Agua de Río Lethe.png"
   },
   {
     "nombre": "Aguijones de Billiwig",
     "precio": 1250,
-    "tipo": "ingrediente",
-    "descript": "200 mL | Precaución al utilizar, el exceso puede provocar levitación. Se usa para poción de Despertares, Crecépolo y Antídoto para venenos.",
+    "categoria": "Ingredientes",
+    "descript": "200 mL | Precaución al utilizar, el exceso puede provocar levitación. Se usa para Pociones de Despertares, Crecépolo y Antídoto para venenos.",
     "imagen": "./src/img/ingredients/Aguijones secos de billywig.png"
   },
   {
     "nombre": "Ajenjo",
     "precio": 400,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "250 g | Se utiliza para pociones curativas y la pócima para dormir. En el mundo muggle se utiliza en medicina y como antipulgas.",
     "imagen": "./src/img/ingredients/Ajenjo.png"
   },
   {
     "nombre": "Alas de hada",
     "precio": 1750,
-    "tipo": "ingrediente",
-    "descript": "100 g | Las hadas son muy difíciles de capturar. Sus halas cubiertas de polvo mágico se usan para la poción Vigorizante y Embellecedora.",
+    "categoria": "Ingredientes",
+    "descript": "100 g | Las hadas son muy difíciles de capturar. Sus halas cubiertas de polvo mágico se usan para la Pociones Vigorizante y Embellecedora.",
     "imagen": "./src/img/ingredients/Alas de hada.png"
   },
   {
     "nombre": "Alas de murciélago",
     "precio": 1050,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "100 g | Se utiliza en varias pociones, pero su principal función es como un componente de la Mezcla de bilis de armadillo.",
     "imagen": "./src/img/ingredients/Alas de murciélago.png"
   },
   {
     "nombre": "Alchemilla",
     "precio": 650,
-    "tipo": "ingrediente",
-    "descript": "150 g | Es utilizada en la famosa poción de Embellecimiento elaborada por el experto en pociones, Zygmunt Budge.",
+    "categoria": "Ingredientes",
+    "descript": "150 g | Es utilizada en la famosa Pociones de Embellecimiento elaborada por el experto en pociones, Zygmunt Budge.",
     "imagen": "./src/img/ingredients/Alchemilla.png"
   },
   {
+    "nombre": "Ampolla de vidrio",
+    "precio": 650,
+    "categoria": "Equipo",
+    "descript": "producto 18",
+    "imagen": "./src/img/materials/Ampolla de vidrio.png"
+  },
+  
+  {
     "nombre": "Asfódelos",
     "precio": 540,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "150 g | Es empleado en el Filtro de Muertos en Vida, teniendo en cuenta que es considerada la comida favorita de los muertos.",
     "imagen": "./src/img/ingredients/Asfódelos.png"
   },
   {
     "nombre": "Babosas cornudas",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 9",
     "imagen": "./src/img/ingredients/Babosas cornudas.png"
   },
   {
+    "nombre": "Balanza de latón",
+    "precio": 500,
+    "categoria": "Equipo",
+    "descript": "producto 9",
+    "imagen": "./src/img/materials/Balanza de latón.png"
+  },  
+  {
     "nombre": "Bayas de muérdago",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Bayas de muérdago.png"
   },
   {
     "nombre": "Bazo de rata en polvo",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 10",
     "imagen": "./src/img/ingredients/Bazo de rata en polvo.png"
   },
   {
     "nombre": "Bazos de murciélago",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Bazos de murciélago.png"
   },
   {
     "nombre": "Bezoar",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Bezoar.png"
   },
   {
     "nombre": "Brotes de valeriana",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Brotes de valeriana.png"
   },
   {
+    "nombre": "Caldero de cobre",
+    "precio": 500,
+    "categoria": "Equipo",
+    "descript": "producto 5",
+    "imagen": "./src/img/materials/Caldero de cobre.png"
+  },
+  {
+    "nombre": "Caldero de estaño",
+    "precio": 500,
+    "categoria": "Equipo",
+    "descript": "producto 5",
+    "imagen": "./src/img/materials/Caldero de estaño.png"
+  },
+  {
+    "nombre": "Caldero de latón",
+    "precio": 500,
+    "categoria": "Equipo",
+    "descript": "producto 5",
+    "imagen": "./src/img/materials/Caldero de latón.png"
+  },
+
+  {
     "nombre": "Cicuta virosa",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Cicuta virosa.png"
   },
   {
     "nombre": "Cicuta",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Cicuta.png"
   },
   {
     "nombre": "Colmillos de serpiente",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Colmillos de serpiente.png"
   },
   {
     "nombre": "Cuerno de bicornio",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Cuerno de Bicornio.png"
   },
   {
     "nombre": "Cuerno de unicornio",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Cuerno de unicornio.png"
   },
   {
     "nombre": "Díctamo",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Díctamo.png"
   },
   {
     "nombre": "Espina de puercospín",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Espina de puercospín.png"
   },
   {
     "nombre": "Espinas de pez león",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Espinas de pez león.png"
   },
   {
+    "nombre": "Felix Felicis",
+    "precio": 4750,
+    "categoria": "Pociones",
+    "descript": "producto 5",
+    "imagen": "./src/img/potions/Felix Felicis.png"
+  },
+  {
     "nombre": "Fluxweed",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Fluxweed.png"
   },
   {
+    "nombre": "Frasco de vidrio",
+    "precio": 500,
+    "categoria": "Equipo",
+    "descript": "producto 5",
+    "imagen": "./src/img/materials/Frasco de vidrio.png"
+  },
+  {
     "nombre": "Gusano de tubo gigante",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Gusano de tubo gigante.png"
   },
   {
     "nombre": "Hierba nudosa",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Hierba nudosa.png"
   },
   {
     "nombre": "Higo desecado",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Higo desecado.png"
   },
   {
     "nombre": "Huevos de doxxy",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Huevos de doxxy.png"
   },
   {
     "nombre": "Infusión de ajenjo",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Infusión de ajenjo.png"
   },
   {
     "nombre": "Jugo de horklump",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Jugo de horklump.png"
   },
   {
     "nombre": "Lavanda",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Lavanda.png"
   },
   {
     "nombre": "Moco de gusarajo",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Moco de gusarajo.png"
   },
   {
+    "nombre": "Mortero",
+    "precio": 500,
+    "categoria": "Equipo",
+    "descript": "producto 5",
+    "imagen": "./src/img/materials/Mortero.png"
+  },
+  {
     "nombre": "Moscas de encaje",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Moscas de encaje.png"
   },
   {
     "nombre": "Ojos de anguila",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Ojos de anguila.png"
   },
   {
     "nombre": "Ojos de escarabajo",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Ojos de escarabajo.png"
   },
   {
     "nombre": "Ojos de pez globo",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Ojos de pez globo.png"
   },
   {
     "nombre": "Óleo de rosa",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Óleo de rosa.png"
   },
   {
     "nombre": "Ortiga seca",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Ortiga seca.png"
   },
   {
     "nombre": "Pelo de abraxan",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Pelo de abraxan.png"
   },
   {
     "nombre": "Piel de boomslang",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Piel de boomslang.png"
   },
   {
+    "nombre": "Poción Embellecedora",
+    "precio": 500,
+    "categoria": "Pociones",
+    "descript": "producto 5",
+    "imagen": "./src/img/potions/Poción de embellecimiento.png"
+  },
+  {
+    "nombre": "Poción de Envejecimiento",
+    "precio": 500,
+    "categoria": "Pociones",
+    "descript": "producto 5",
+    "imagen": "./src/img/potions/Poción de envejecimiento.png"
+  },
+  {
     "nombre": "Ruda común",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Ruda común.png"
   },
   {
     "nombre": "Sangre de dragón",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Sangre de dragón.png"
   },
   {
     "nombre": "Sangre de salamandra",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Sangre de salamandra.png"
   }, 
   {
     "nombre": "Sanguijuelas",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Sanguijuelas.png"
   },
   {
+    "nombre": "Skelegro",
+    "precio": 500,
+    "categoria": "Pociones",
+    "descript": "producto 5",
+    "imagen": "./src/img/potions/Skelegro.png"
+  },
+  {
     "nombre": "Tintura de demiguise",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Tintura de demiguise.png"
   },
   {
     "nombre": "Tórax de libélulas",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Tórax de libélulas.png"
   },
   {
     "nombre": "Veneno de acromántula",
     "precio": 500,
-    "tipo": "ingrediente",
+    "categoria": "Ingredientes",
     "descript": "producto 5",
     "imagen": "./src/img/ingredients/Veneno de acromántula.png"
   }
