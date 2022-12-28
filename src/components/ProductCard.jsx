@@ -1,24 +1,25 @@
 import '../styles/Productos.css'
-import { products } from '../../public/productos'
-import BtnAddCart from '../img/btnbg.png'
+import { useState } from 'react'
+import items from '../../items.json'
 
 const ProductCard = () => {
 
+    const [item, setItem] = useState([])
+    
     return (
         <div className='productos-container'>
-        {products.map((product, index) => {
+        {items.map((item, index) => {
             return (
             <div key={index} className='card-container'>
-                <h3 className='card-nombre'>{product.nombre}</h3>
+                <h3 className='card-nombre'>{item.nombre}</h3>
                 <div className='card-image-container'>
-                    <img src={product.imagen} />
+                    <img src={item.imagen} />
                 </div>
-                <h4 className='card-precio'>${product.precio}</h4>
+                <h4 className='card-precio'>${item.precio}</h4>
                 <div className='card-descript-conatiner'>
-                    <p>{product.descript}</p>
+                    <p>{item.descript}</p>
                 </div>
                 <button className='btn-add-product'>
-                    {/* <img src={BtnAddCart} /> */}
                     <p>+ CANASTA</p>
                 </button>
             </div>
