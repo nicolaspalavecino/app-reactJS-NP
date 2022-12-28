@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     border-bottom: #ab8854 solid 1px;
-    margin-bottom: 3vw;
+    margin-bottom: 0.5vw;
 }
 
 .productos-titulo img{
@@ -37,11 +37,35 @@
     color: #d3ab70;
 }
 
+.sup-prod-content {
+    display: flex;
+    flex-direction: row;
+    border-top: #ab8854 solid 1px;
+    border-bottom: #ab8854 solid 1px;
+}
+
+.side-productos {
+    width: 10%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.side-der {
+    background-image: url(../img/side-productos-der.png);
+}
+
+.side-izq {
+    background-image: url(../img/side-productos-izq.png);
+}
+
 .productos-container {
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 3vw;
     gap: 2vw;
 }
 
