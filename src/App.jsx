@@ -13,7 +13,7 @@ function App() {
         <NavBar />
         <div className='body'>
           <Routes>
-            <Route path='/' element={<Inicio />} />
+            <Route path='/' element={<Inicio greeting={"Bienvenidos al Caldero Humeante"}/>} />
             <Route path='/nosotros' element={<Nosotros />} />
             <Route path='/productos' element={<Productos />} />
             <Route path='/contacto' element={<Contacto />} />

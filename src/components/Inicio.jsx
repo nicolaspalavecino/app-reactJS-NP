@@ -1,10 +1,10 @@
 import '../styles/Inicio.css';
 
-const Inicio = () => {
+const Inicio = ({ greeting }) => {
     return(
         <>
             <div className='inicio'>
-                <h2>INICIO</h2>
+                <h2>{greeting}</h2>
             </div>
         </>
     )
