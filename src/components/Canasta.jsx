@@ -1,6 +1,6 @@
 import '../styles/NavBar.css'
 import '../styles/Canasta.css'
-import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
+import { Button, Tooltip, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
 import LogoCanasta from '../img/LogoCanasta.png'
 
 const Canasta = () => {
@@ -8,10 +8,12 @@ const Canasta = () => {
     
     return (
       <>
-        <Button onClick={onOpen} className='btn-canasta'>
-            <img src={LogoCanasta} />
-            <span className='item-cart-count'>1</span>
-        </Button>
+        <Tooltip hasArrow label='Canasta de Compras' bg='#634f31'>
+          <Button onClick={onOpen} className='btn-canasta'>
+              <img src={LogoCanasta} />
+              <span className='item-cart-count'>1</span>
+          </Button>
+        </Tooltip>
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>

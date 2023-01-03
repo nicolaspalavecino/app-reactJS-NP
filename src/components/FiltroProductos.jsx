@@ -18,7 +18,7 @@ const FiltroProductos = ({ filterItem, setItem, menuItems }) => {
           </button>
          </div>
       </>
-    );
-  };
+    )
+  }
    
   export default FiltroProductos;

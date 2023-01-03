@@ -1,0 +1,81 @@
+[
+  {
+    "nombre": "Arsenius Jigger",
+    "subtitle": "Autor experto en Defensa contra las Artes Oscuras y Pociones",
+    "descript": "Fue un reconocido escritor, autor de los libros 'Magical Drafts and Potions' y 'Potion Opuscule', siendo el primero parte de la bibliografía obligatoria en las instituciones de hechicería. También se adentró en el estudio de la Transfiguración. desarrollando una importante investigación sobre Hombres Lobo y Licantropía.", 
+    "imagen": "./src/img/Potioneers/Arsenius Jigger.png"
+  },
+  {
+    "nombre": "Fleamont Potter",
+    "subtitle": "Especialista en Pociones y prestigioso Empresario",
+    "descript": "A través de la creación de 'Sleekeazy's Hair Potion', Fleamont fundó una exitosa compañía productora de pociones que cuadruplicó la fortuna de la familia Potter. Adicionalmente, fue un célebre duelista en sus años de juventud.", 
+    "imagen": "./src/img/Potioneers/Fleamont Potter.png"
+  },
+  {
+    "nombre": "Gethsemane Prickle",
+    "subtitle": "Magizoologista, especialista en Herbología y Pociones",
+    "descript": "Directora del Departamento de Regulación y Control de criaturas mágicas. Durante su paso por el Ala de investigación, fue reconocida por su habilidad de identificar diferentes pociones y sus efectos, solo al examinar su apariencia y olor, incluso contando con un pequeño residuo.", 
+    "imagen": "./src/img/Potioneers/Gethsemane Prickle.png"
+  },
+  {
+    "nombre": "Gunhilda d'Gorsemoor",
+    "subtitle": "Especialista Sanadora y Draconologista",
+    "descript": "Desarrolló la cura para la viruela de dragón, una enfermedad que terminó con la vida de miles de magos y brujas. Su arduo trabajo con los dragones y su experticia en el arte de pociones llevó a Grunhilda a ser un pilar de la medicina mágica.", 
+    "imagen": "./src/img/Potioneers/Gunhilda de Gorsemoor.png"
+  },
+  {
+    "nombre": "Hesper Starkey",
+    "subtitle": "Astrónoma y Especialista en Pociones",
+    "descript": "Pionera en el campo de la astronomía, Hesper investigó cómo las distintas fases de la luna afectan la preparación de pociones. Su estudio constituyó un aporte inmensurable para la creación de la Poción Matalobos, destinada al tratamiento de la Licantropía.", 
+    "imagen": "./src/img/Potioneers/Hesper Starkey.png"
+  }, 
+  {
+    "nombre": "Horace Slughorn",
+    "subtitle": "Maestro en Pociones y Fundador del Club de las Eminencias",
+    "descript": "En palabras de Albus Dumbledore: 'A Horace le gusta la comodidad y disfruta de la compañía de los famosos, exitosos y los poderosos. Nunca ha querido ocupar el trono, prefiere el asiento trasero'. Slughorn se desempeñó como un eminente profesor de Hogwars, fundador del Club de las Eminencias y se enfrentó contra el mismísimo Voldemort en la Batalla de Hogwarts.", 
+    "imagen": "./src/img/Potioneers/Horace Slughorn.png"
+  },
+  {
+    "nombre": "Libatius Borage",
+    "subtitle": "Escritor, especialista en Pociones y Alquimia",
+    "descript": "Escritor del famoso libro 'Advanced Potion-Making' que conforma la bibliografía de cabecera en las instituciones de magia y hechicería. Borage fue un mago sudamericano, pionero en el estudio de pociones y amante de la alquimia, campos sobre los cuales escribió extensivamente.", 
+    "imagen": "./src/img/Potioneers/Libatius Borage.png"
+  },
+  {
+    "nombre": "Mary Skower",
+    "subtitle": "Experta en Pociones y Creadora de Soluciones de Limpieza",
+    "descript": "Mejor conocida como Mrs. Skower, cara de uno de los productos de limpeza infaltable en cualquier hogar del mundo mágico: 'Mrs Skower's All-Purpose Magical Mess Remover'. Se trata de una solución mágica de limpieza capaz de limpiar hasta el ectoplasma de fantasmas.", 
+    "imagen": "./src/img/Potioneers/Mary Skower.png"
+  },
+  {
+    "nombre": "Nicolas Flamel",
+    "subtitle": "Alquimista y Creador de la Piedra Filosofal",
+    "descript": "Único creador de la Piedra Filosofal, una sustancia legendaria con poderes inimaginables. Fue uno de los magos más longevos junto con su esposa, Perenelle, gracias al Elixir de la Vida, proveniente de la Piedra. Fue un gran aliado y amigo de Albus Dumbledore, cumpliendo un rol importante en la lucha contra Gellert Grindelwald durante la Guerra Mágica.", 
+    "imagen": "./src/img/Potioneers/Nicolas Flamel.png"
+  },
+  {
+    "nombre": "Sacharissa Tugwood",
+    "subtitle": "Especialista en Pociones y pionera en Magicosméticos",
+    "descript": "Primera bruja en desarrollar y utilizar pociones de belleza. Creó una gran variedad de pociones cosméticas, destacándose su investigación sobre las propiedades de la pus del bubotubérculo para tratar el acné.", 
+    "imagen": "./src/img/Potioneers/Sacharissa Tugwood.png"
+  },
+  {
+    "nombre": "Severus Snape",
+    "subtitle": "Maestro de Pociones y Defensa de las Artes Oscuras",
+    "descript": "Bruja", 
+    "imagen": "./src/img/Potioneers/Severus Snape.png"
+  },
+  {
+    "nombre": "Tilden Toots",
+    "subtitle": "Experto en Herbología y célebre Presentador de Radio.",
+    "descript": "Presentador de 'Toots, Shoots 'n' Roots'. A partir de sus estudios en Herbología y Pociones, desarrolló su propia línea de pociones relacionada con el cuidado de las plantas y compartía sus consejos durante su show radial.", 
+    "imagen": "./src/img/Potioneers/Tilden Toots.png"
+  },
+
+  {
+    "nombre": "Zygmunt Budge",
+    "subtitle": "Experto en Pociones y Escritor de renombre",
+    "descript": "Fue un mago ermitaño que en su juventud abandonó Hogwarts y se mudó a una isla remota donde vivió en soledad y condujo infinidad de experimentos e investigaciones que culminaron en la escritura de 'The Book of Potions', uno de los libros más famosos sobre el arte de la elaboración de pociones. ", 
+    "imagen": "./src/img/Potioneers/Zygmunt Budge.png"
+  } 
+]

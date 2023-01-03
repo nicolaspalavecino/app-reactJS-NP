@@ -1,4 +1,4 @@
-import '../styles/Productos.css';
+import '../styles/Productos.css'
 import ProductCard from './ProductCard.jsx'
 import Prod1Banner from '../img/Prod1-logo.png'
 import Prod2Banner from '../img/Prod2-logo.png'

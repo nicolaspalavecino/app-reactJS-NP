@@ -31,7 +31,7 @@
     "nombre": "Alas de hada",
     "precio": 1750,
     "categoria": "Ingredientes",
-    "descript": "100 g | Las hadas son muy difíciles de capturar. Sus halas cubiertas de polvo mágico se usan para la Pociones Vigorizante y Embellecedora.",
+    "descript": "100 g | Las hadas son muy difíciles de capturar. Sus alas cubiertas de polvo mágico se usan para la Poción Vigorizante y la Embellecedora.",
     "imagen": "./src/img/ingredients/Alas de hada.png"
   },
   {
