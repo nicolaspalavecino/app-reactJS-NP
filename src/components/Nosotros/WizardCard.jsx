@@ -1,5 +1,5 @@
-import '../styles/Nosotros.css'
-import wizards from '../../wizards.json'
+import './Nosotros.css'
+import wizards from '../../../wizards.json'
 import SaberMas from './SaberMas'
 
 const WizardCard = ()=> {

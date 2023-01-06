@@ -1,4 +1,4 @@
-import '../styles/Inicio.css';
+import './Inicio.css';
 
 const Inicio = ({ greeting }) => {
     return(

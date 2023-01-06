@@ -1,4 +1,4 @@
-import '../styles/Contacto.css';
+import './Contacto.css';
 
 const Contacto = () => {
     return(

@@ -52,11 +52,11 @@
 }
 
 .side-der {
-    background-image: url(../img/side-productos-der.png);
+    background-image: url(../../img/side-productos-der.png);
 }
 
 .side-izq {
-    background-image: url(../img/side-productos-izq.png);
+    background-image: url(../../img/side-productos-izq.png);
 }
 
 .central-productos {
@@ -81,7 +81,7 @@
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(../img/btnbg-categoria.png);
+    background-image: url(../../img/btnbg-categoria.png);
     padding: 3px;
     color:#ffffff;
     font-family: 'Crimson Text', serif;
@@ -89,7 +89,7 @@
 }
 
 .btn-filtrar:hover {
-    background-image: url(../img/btnbg-categoria-hover.png);
+    background-image: url(../../img/btnbg-categoria-hover.png);
     color: black;
 }
 
@@ -163,12 +163,12 @@
     background-position: center;
     background-size: 100%;
     background-repeat: repeat-x;
-    background-image: url("../img/btnbg.png");
+    background-image: url("../../img/btnbg.png");
     text-align: center;
 }
 
 .btn-add-product:hover {
-    background-image: url("../img/btnbg-hover.png");
+    background-image: url("../../img/btnbg-hover.png");
 }
 
 .btn-add-product p {

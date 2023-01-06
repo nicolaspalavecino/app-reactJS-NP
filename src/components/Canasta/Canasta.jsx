@@ -1,7 +1,7 @@
-import '../styles/NavBar.css'
-import '../styles/Canasta.css'
+import '../NavBar/NavBar.css'
+import './Canasta.css'
 import { Button, Tooltip, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
-import LogoCanasta from '../img/LogoCanasta.png'
+import LogoCanasta from '../../img/LogoCanasta.png'
 
 const Canasta = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()

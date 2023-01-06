@@ -1,5 +1,5 @@
-import '../styles/Productos.css'
-import items from '../../items.json'
+import './Productos.css'
+import items from '../../../items.json'
 
 const FiltroProductos = ({ filterItem, setItem, menuItems }) => {
 

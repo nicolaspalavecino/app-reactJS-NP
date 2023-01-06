@@ -1,6 +1,6 @@
-import '../styles/SaberMas.css'
+import './SaberMas.css'
 import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, useDisclosure, Tooltip } from '@chakra-ui/react'
-import LogoSaber from '../img/btnbg-saber.png'
+import LogoSaber from '../../img/btnbg-saber.png'
 
 const SaberMas = ({ name, photo, position, info }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()

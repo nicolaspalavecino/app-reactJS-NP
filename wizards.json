@@ -35,6 +35,12 @@
     "descript": "En palabras de Albus Dumbledore: 'A Horace le gusta la comodidad y disfruta de la compañía de los famosos, exitosos y los poderosos. Nunca ha querido ocupar el trono, prefiere el asiento trasero'. Slughorn se desempeñó como un eminente profesor de Hogwars, fundador del Club de las Eminencias y se enfrentó contra el mismísimo Voldemort en la Batalla de Hogwarts.", 
     "imagen": "./src/img/Potioneers/Horace Slughorn.png"
   },
+    {
+    "nombre": "Laverne de Montmorency",
+    "subtitle": "Experta en Pociones y Creadora de Pociones de Amor",
+    "descript": " Fue una bruja muy competente en el arte y la ciencia de la elaboración de pociones, habiendo inventado con éxito varias pociones de amor a lo largo de su vida. Las pociones de amor son brebajes particularmente avanzados y muy populares especialmente entre los magos y brujas jóvenes. Esto le dió gran popularidad e incluso apareció en una tarjeta de rana de chocolate por sus impresionantes logros.", 
+    "imagen": "./src/img/Potioneers/Laverne de Montmorency.png"
+  },
   {
     "nombre": "Libatius Borage",
     "subtitle": "Escritor, especialista en Pociones y Alquimia",

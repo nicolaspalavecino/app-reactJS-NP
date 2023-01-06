@@ -1,10 +1,10 @@
-import '../styles/Productos.css'
+import './Productos.css'
 import ProductCard from './ProductCard.jsx'
-import Prod1Banner from '../img/Prod1-logo.png'
-import Prod2Banner from '../img/Prod2-logo.png'
-import FiltroProductos from './FiltroProductos'
+import Prod1Banner from '../../img/Prod1-logo.png'
+import Prod2Banner from '../../img/Prod2-logo.png'
+import FiltroProductos from './FiltroProductos.jsx'
 import { useState } from 'react'
-import items from '../../items.json'
+import items from '../../../items.json'
 
 const Productos = () => {
     

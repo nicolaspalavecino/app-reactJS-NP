@@ -1,8 +1,8 @@
-import '../styles/NavBar.css'
-import LogoCalderoHumeante from '../img/LogoCalderoHumeante.png'
+import './NavBar.css'
+import LogoCalderoHumeante from '../../img/LogoCalderoHumeante.png'
 import { useState } from 'react'
 import { ImCross, ImMenu } from 'react-icons/im'
-import Canasta from './Canasta'
+import Canasta from '../Canasta/Canasta'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 
 const NavBar = () => {

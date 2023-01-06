@@ -1,8 +1,8 @@
-import '../styles/Nosotros.css';
-import Nos1Banner from '../img/Nos1.png'
-import WizardCard from '../components/WizardCard.jsx'
-import SideInspDer from '../img/side-insp-der.png'
-import SideInspIzq from '../img/side-insp-izq.png'
+import './Nosotros.css';
+import Nos1Banner from '../../img/Nos1.png'
+import WizardCard from './WizardCard.jsx'
+import SideInspDer from '../../img/side-insp-der.png'
+import SideInspIzq from '../../img/side-insp-izq.png'
 
 
 const Nosotros = () => {
