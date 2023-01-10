@@ -1,6 +1,6 @@
-import './Nosotros.css'
+import './WizardCard.css'
 import wizards from '../../../wizards.json'
-import SaberMas from './SaberMas'
+import SaberMas from '../SaberMas/SaberMas'
 
 const WizardCard = ()=> {
 

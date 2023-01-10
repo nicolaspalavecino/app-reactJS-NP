@@ -1,0 +1,26 @@
+.filtros-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 3vw;
+    gap: 2vw;
+}
+
+.btn-filtrar {
+    height: 45px;
+    width: 180px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../../img/btnbg-categoria.png);
+    padding: 3px;
+    color:#ffffff;
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+}
+
+.btn-filtrar:hover {
+    background-image: url(../../img/btnbg-categoria-hover.png);
+    color: black;
+}

@@ -1,9 +1,9 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar.jsx'
-import Inicio from './components/Inicio/Inicio.jsx'
-import Nosotros from './components/Nosotros/Nosotros.jsx'
-import Productos from './components/Productos/Productos.jsx'
-import Contacto from './components/Contacto/Contacto.jsx'
+import Inicio from './pages/Inicio/Inicio.jsx'
+import Nosotros from './pages/Nosotros/Nosotros.jsx'
+import Productos from './pages/Productos/Productos.jsx'
+import Contacto from './pages/Contacto/Contacto.jsx'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {

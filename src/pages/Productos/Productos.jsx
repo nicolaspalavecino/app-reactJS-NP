@@ -1,8 +1,8 @@
 import './Productos.css'
-import ProductCard from './ProductCard.jsx'
+import ProductCard from '../../components/ProductCard/ProductCard'
 import Prod1Banner from '../../img/Prod1-logo.png'
 import Prod2Banner from '../../img/Prod2-logo.png'
-import FiltroProductos from './FiltroProductos.jsx'
+import FiltroProductos from '../../components/FiltroProductos/FiltroProductos'
 import { useState } from 'react'
 import items from '../../../items.json'
 

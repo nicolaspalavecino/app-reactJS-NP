@@ -1,4 +1,4 @@
-import './Productos.css'
+import './FiltroProductos.css'
 import items from '../../../items.json'
 
 const FiltroProductos = ({ filterItem, setItem, menuItems }) => {

@@ -1,0 +1,74 @@
+.nosotros-page {
+    width: 100%;
+    z-index: -2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(15,11,8,1) 13%, rgba(45,17,36,1) 24%, rgba(47,42,91,1) 50%, rgba(50,49,96,1) 64%, rgba(88,59,92,1) 80%, rgba(122,63,89,1) 91%);
+    padding: 3vw;
+}
+
+.nosotros-titulo {
+    margin-top: 3vw;
+}
+
+.nosotros-answer {
+    border: #ab8854 dashed 1px;
+    background-color: #20082067;
+    color:#ab8854;
+    text-align: center;
+    padding: 1vw 7vw;
+    margin: 1vw;
+}
+
+.title .nosotros-answer p {
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-size: 1.8vw;
+    line-height: normal;
+}
+
+.magos-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 5vw;
+    border-bottom:#ab8854 1px dashed;
+}
+
+.magos-title h3 {
+    font-family: 'Rye', cursive;
+    color:#f0c687;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 5vw;
+    width: 50%;
+}
+
+.magos-title img {
+    width: 25%;
+}
+
+.potioneers-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4vw 0;
+    gap: 2vw;
+}
+
+@media (max-width: 480px) {
+    .productos-titulo.nosotros-titulo {
+        flex-direction: column;
+    }
+
+    .title .nosotros-answer p {
+        font-size: 3.8vw;
+    }
+}
+
+
+
+
