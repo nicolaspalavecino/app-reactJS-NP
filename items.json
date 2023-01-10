@@ -4,7 +4,7 @@
     "precio": 500,
     "categoria": "Ingredientes",
     "descript": "250 g | Aunque sus hojas son tóxicas, las flores se suele utilizar para la Pociones Matalobos y la Pociones de Despertares.", 
-    "imagen": "../../public/Acónito.png"
+    "imagen": "./src/img/ingredients/Acónito.png"
   },
   {
     "nombre": "Agua de Río Lethe",
