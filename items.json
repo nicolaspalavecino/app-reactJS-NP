@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "nombre": "Acónito",
     "precio": 500,
     "categoria": "Ingredientes",
@@ -7,6 +8,7 @@
     "imagen": "./src/img/ingredients/Acónito.png"
   },
   {
+    "id": 2,
     "nombre": "Agua de Río Lethe",
     "precio": 2500,
     "categoria": "Ingredientes",
@@ -14,6 +16,7 @@
     "imagen": "./src/img/ingredients/Agua de Río Lethe.png"
   },
   {
+    "id": 3,
     "nombre": "Aguijones de Billiwig",
     "precio": 1250,
     "categoria": "Ingredientes",
@@ -21,6 +24,7 @@
     "imagen": "./src/img/ingredients/Aguijones secos de billywig.png"
   },
   {
+    "id": 4,
     "nombre": "Ajenjo",
     "precio": 400,
     "categoria": "Ingredientes",
@@ -28,6 +32,7 @@
     "imagen": "./src/img/ingredients/Ajenjo.png"
   },
   {
+    "id": 5,
     "nombre": "Alas de hada",
     "precio": 1750,
     "categoria": "Ingredientes",
@@ -35,6 +40,7 @@
     "imagen": "./src/img/ingredients/Alas de hada.png"
   },
   {
+    "id": 6,
     "nombre": "Alas de murciélago",
     "precio": 1050,
     "categoria": "Ingredientes",
@@ -42,6 +48,7 @@
     "imagen": "./src/img/ingredients/Alas de murciélago.png"
   },
   {
+    "id": 7,
     "nombre": "Alchemilla",
     "precio": 650,
     "categoria": "Ingredientes",
@@ -49,6 +56,7 @@
     "imagen": "./src/img/ingredients/Alchemilla.png"
   },
   {
+    "id": 8,
     "nombre": "Ampolla de vidrio",
     "precio": 1500,
     "categoria": "Equipo",
@@ -57,6 +65,7 @@
   },
   
   {
+    "id": 9,
     "nombre": "Asfódelos",
     "precio": 540,
     "categoria": "Ingredientes",
@@ -64,6 +73,7 @@
     "imagen": "./src/img/ingredients/Asfódelos.png"
   },
   {
+    "id": 10,
     "nombre": "Babosas cornudas",
     "precio": 700,
     "categoria": "Ingredientes",
@@ -71,6 +81,7 @@
     "imagen": "./src/img/ingredients/Babosas cornudas.png"
   },
   {
+    "id": 11,
     "nombre": "Balanza de latón",
     "precio": 3500,
     "categoria": "Equipo",
@@ -78,6 +89,7 @@
     "imagen": "./src/img/materials/Balanza de latón.png"
   },  
   {
+    "id": 12,
     "nombre": "Bayas de muérdago",
     "precio": 350,
     "categoria": "Ingredientes",
@@ -85,6 +97,7 @@
     "imagen": "./src/img/ingredients/Bayas de muérdago.png"
   },
   {
+    "id": 13,
     "nombre": "Bazo de rata en polvo",
     "precio": 850,
     "categoria": "Ingredientes",
@@ -92,6 +105,7 @@
     "imagen": "./src/img/ingredients/Bazo de rata en polvo.png"
   },
   {
+    "id": 14,
     "nombre": "Bazos de murciélago",
     "precio": 1200,
     "categoria": "Ingredientes",
@@ -99,6 +113,7 @@
     "imagen": "./src/img/ingredients/Bazos de murciélago.png"
   },
   {
+    "id": 15,
     "nombre": "Bezoar",
     "precio": 750,
     "categoria": "Ingredientes",
@@ -106,6 +121,7 @@
     "imagen": "./src/img/ingredients/Bezoar.png"
   },
   {
+    "id": 16,
     "nombre": "Brotes de valeriana",
     "precio": 450,
     "categoria": "Ingredientes",
@@ -113,6 +129,7 @@
     "imagen": "./src/img/ingredients/Brotes de valeriana.png"
   },
   {
+    "id": 17,
     "nombre": "Caldero de cobre",
     "precio": 5000,
     "categoria": "Equipo",
@@ -120,6 +137,7 @@
     "imagen": "./src/img/materials/Caldero de cobre.png"
   },
   {
+    "id": 18,
     "nombre": "Caldero de latón",
     "precio": 4500,
     "categoria": "Equipo",
@@ -127,6 +145,7 @@
     "imagen": "./src/img/materials/Caldero de latón.png"
   },
   {
+    "id": 19,
     "nombre": "Caldero de plata",
     "precio": 4250,
     "categoria": "Equipo",
@@ -135,6 +154,7 @@
   },
 
   {
+    "id": 20,
     "nombre": "Cicuta virosa",
     "precio": 750,
     "categoria": "Ingredientes",
@@ -142,6 +162,7 @@
     "imagen": "./src/img/ingredients/Cicuta virosa.png"
   },
   {
+    "id": 21,
     "nombre": "Cicuta",
     "precio": 650,
     "categoria": "Ingredientes",
@@ -149,6 +170,7 @@
     "imagen": "./src/img/ingredients/Cicuta.png"
   },
   {
+    "id": 22,
     "nombre": "Colmillos de serpiente",
     "precio": 500,
     "categoria": "Ingredientes",
@@ -156,6 +178,7 @@
     "imagen": "./src/img/ingredients/Colmillos de serpiente.png"
   },
   {
+    "id": 23,
     "nombre": "Crisopos",
     "precio": 600,
     "categoria": "Ingredientes",
@@ -163,6 +186,7 @@
     "imagen": "./src/img/ingredients/Moscas de encaje.png"
   },
   {
+    "id": 24,
     "nombre": "Cuerno de bicornio",
     "precio": 1200,
     "categoria": "Ingredientes",
@@ -170,6 +194,7 @@
     "imagen": "./src/img/ingredients/Cuerno de Bicornio.png"
   },
   {
+    "id": 25,
     "nombre": "Cuerno de unicornio",
     "precio": 1000,
     "categoria": "Ingredientes",
@@ -177,6 +202,7 @@
     "imagen": "./src/img/ingredients/Cuerno de unicornio.png"
   },
   {
+    "id": 26,
     "nombre": "Díctamo",
     "precio": 500,
     "categoria": "Ingredientes",
@@ -184,6 +210,7 @@
     "imagen": "./src/img/ingredients/Díctamo.png"
   },
   {
+    "id": 27,
     "nombre": "Espina de puercospín",
     "precio": 350,
     "categoria": "Ingredientes",
@@ -191,6 +218,7 @@
     "imagen": "./src/img/ingredients/Espina de puercospín.png"
   },
   {
+    "id": 28,
     "nombre": "Espinas de pez león",
     "precio": 500,
     "categoria": "Ingredientes",
@@ -198,6 +226,7 @@
     "imagen": "./src/img/ingredients/Espinas de pez león.png"
   },
   {
+    "id": 29,
     "nombre": "Felix Felicis",
     "precio": 4750,
     "categoria": "Pociones",
@@ -205,6 +234,7 @@
     "imagen": "./src/img/potions/Felix Felicis.png"
   },
   {
+    "id": 30,
     "nombre": "Fluxweed",
     "precio": 780,
     "categoria": "Ingredientes",
@@ -212,6 +242,7 @@
     "imagen": "./src/img/ingredients/Fluxweed.png"
   },
   {
+    "id": 31,
     "nombre": "Frasco de vidrio",
     "precio": 800,
     "categoria": "Equipo",
@@ -219,6 +250,7 @@
     "imagen": "./src/img/materials/Frasco de vidrio.png"
   },
   {
+    "id": 32,
     "nombre": "Gusano de tubo",
     "precio": 780,
     "categoria": "Ingredientes",
@@ -226,6 +258,7 @@
     "imagen": "./src/img/ingredients/Gusano de tubo gigante.png"
   },
   {
+    "id": 33,
     "nombre": "Hierba nudosa",
     "precio": 800,
     "categoria": "Ingredientes",
@@ -233,6 +266,7 @@
     "imagen": "./src/img/ingredients/Hierba nudosa.png"
   },
   {
+    "id": 34,
     "nombre": "Higo desecado",
     "precio": 500,
     "categoria": "Ingredientes",
@@ -240,6 +274,7 @@
     "imagen": "./src/img/ingredients/Higo desecado.png"
   },
   {
+    "id": 35,
     "nombre": "Huevos de doxy",
     "precio": 700,
     "categoria": "Ingredientes",
@@ -247,6 +282,7 @@
     "imagen": "./src/img/ingredients/Huevos de doxxy.png"
   },
   {
+    "id": 36,
     "nombre": "Infusión de ajenjo",
     "precio": 750,
     "categoria": "Ingredientes",
@@ -254,6 +290,7 @@
     "imagen": "./src/img/ingredients/Infusión de ajenjo.png"
   },
   {
+    "id": 37,
     "nombre": "Jugo de horklump",
     "precio": 600,
     "categoria": "Ingredientes",
@@ -261,6 +298,7 @@
     "imagen": "./src/img/ingredients/Jugo de horklump.png"
   },
   {
+    "id": 38,
     "nombre": "Lavanda",
     "precio": 400,
     "categoria": "Ingredientes",
@@ -268,6 +306,7 @@
     "imagen": "./src/img/ingredients/Lavanda.png"
   },
   {
+    "id": 39,
     "nombre": "Moco de gusarajo",
     "precio": 550,
     "categoria": "Ingredientes",
@@ -275,6 +314,7 @@
     "imagen": "./src/img/ingredients/Moco de gusarajo.png"
   },
   {
+    "id": 40,
     "nombre": "Mortero",
     "precio": 3500,
     "categoria": "Equipo",
@@ -282,6 +322,7 @@
     "imagen": "./src/img/materials/Mortero.png"
   },
   {
+    "id": 41,
     "nombre": "Ojos de anguila",
     "precio": 750,
     "categoria": "Ingredientes",
@@ -289,6 +330,7 @@
     "imagen": "./src/img/ingredients/Ojos de anguila.png"
   },
   {
+    "id": 42,
     "nombre": "Ojos de escarabajo",
     "precio": 810,
     "categoria": "Ingredientes",
@@ -296,6 +338,7 @@
     "imagen": "./src/img/ingredients/Ojos de escarabajo.png"
   },
   {
+    "id": 43,
     "nombre": "Ojos de pez globo",
     "precio": 950,
     "categoria": "Ingredientes",
@@ -303,6 +346,7 @@
     "imagen": "./src/img/ingredients/Ojos de pez globo.png"
   },
   {
+    "id": 44,
     "nombre": "Óleo de rosa",
     "precio": 650,
     "categoria": "Ingredientes",
@@ -310,6 +354,7 @@
     "imagen": "./src/img/ingredients/Óleo de rosa.png"
   },
   {
+    "id": 45,
     "nombre": "Ortiga seca",
     "precio": 400,
     "categoria": "Ingredientes",
@@ -317,6 +362,7 @@
     "imagen": "./src/img/ingredients/Ortiga seca.png"
   },
   {
+    "id": 46,
     "nombre": "Pelo de abraxan",
     "precio": 850,
     "categoria": "Ingredientes",
@@ -324,6 +370,7 @@
     "imagen": "./src/img/ingredients/Pelo de abraxan.png"
   },
   {
+    "id": 47,
     "nombre": "Piel de boomslang",
     "precio": 800,
     "categoria": "Ingredientes",
@@ -331,6 +378,7 @@
     "imagen": "./src/img/ingredients/Piel de boomslang.png"
   },
   {
+    "id": 48,
     "nombre": "Poción Embellecedora",
     "precio": 3500,
     "categoria": "Pociones",
@@ -338,6 +386,7 @@
     "imagen": "./src/img/potions/Poción de embellecimiento.png"
   },
   {
+    "id": 49,
     "nombre": "Poción de Envejecimiento",
     "precio": 3500,
     "categoria": "Pociones",
@@ -345,6 +394,7 @@
     "imagen": "./src/img/potions/Poción de envejecimiento.png"
   },
   {
+    "id": 50,
     "nombre": "Ruda común",
     "precio": 500,
     "categoria": "Ingredientes",
@@ -352,6 +402,7 @@
     "imagen": "./src/img/ingredients/Ruda común.png"
   },
   {
+    "id": 51,
     "nombre": "Sangre de dragón",
     "precio": 1000,
     "categoria": "Ingredientes",
@@ -359,6 +410,7 @@
     "imagen": "./src/img/ingredients/Sangre de dragón.png"
   },
   {
+    "id": 52,
     "nombre": "Sangre de salamandra",
     "precio": 750,
     "categoria": "Ingredientes",
@@ -366,6 +418,7 @@
     "imagen": "./src/img/ingredients/Sangre de salamandra.png"
   }, 
   {
+    "id": 53,
     "nombre": "Sanguijuelas",
     "precio": 500,
     "categoria": "Ingredientes",
@@ -373,6 +426,7 @@
     "imagen": "./src/img/ingredients/Sanguijuelas.png"
   },
   {
+    "id": 54,
     "nombre": "Skelegro",
     "precio": 4000,
     "categoria": "Pociones",
@@ -380,6 +434,7 @@
     "imagen": "./src/img/potions/Skelegro.png"
   },
   {
+    "id": 55,
     "nombre": "Tintura de demiguise",
     "precio": 800,
     "categoria": "Ingredientes",
@@ -387,6 +442,7 @@
     "imagen": "./src/img/ingredients/Tintura de demiguise.png"
   },
   {
+    "id": 56,
     "nombre": "Tórax de libélulas",
     "precio": 500,
     "categoria": "Ingredientes",
@@ -394,6 +450,7 @@
     "imagen": "./src/img/ingredients/Tórax de libélulas.png"
   },
   {
+    "id": 57,
     "nombre": "Veneno de acromántula",
     "precio": 1350,
     "categoria": "Ingredientes",

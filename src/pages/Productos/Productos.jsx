@@ -37,9 +37,18 @@ const Productos = () => {
                         setItem={setItem}
                         menuItems={menuItems}
                     />
-                    <ProductCard 
-                        productos={item}
-                    />
+                    <div className='productos-container'>
+                        {item.map((item, index) => {
+                            return (
+                                <ProductCard 
+                                key={index}
+                                nombre={item.nombre}
+                                precio={item.precio}
+                                imagen={item.imagen}
+                            />
+                            )
+                        })}
+                    </div>
                 </div>
                 <div className='side-productos side-der'></div>
             </div>

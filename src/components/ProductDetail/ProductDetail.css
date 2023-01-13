@@ -1,0 +1,36 @@
+.detail-product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    background-color: black;
+    gap: 1vw;
+}
+
+.detail-image-container {
+    width: 45vw;
+    background-color: red;
+}
+
+.detail-info-container {
+    width: 45vw;
+    height: 60vh;
+    background-color: #A98754;
+    padding: 2vw;
+}
+
+.detail-info-container h2 {
+    color: white;
+    font-size:5vw;
+    text-align: left;
+    padding: 0;
+}
+
+.detail-info-container h3 {
+    color: whitesmoke;
+    font-size: 4vw;
+}
+
+
+
