@@ -3,12 +3,23 @@ import ProductCard from '../../components/ProductCard/ProductCard'
 import Prod1Banner from '../../img/Prod1-logo.png'
 import Prod2Banner from '../../img/Prod2-logo.png'
 import FiltroProductos from '../../components/FiltroProductos/FiltroProductos'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import items from '../../../items.json'
 
 const Productos = () => {
+
+    const [item, setItem] = useState([])
     
-    const [item, setItem] = useState(items)
+    const getProducts = () => {
+        fetch("items.json")
+            .then((res) => res.json())
+            .then((data) => setItem(data))
+            .catch((err) => console.log(err))
+    }
+
+    useEffect(() => {
+        getProducts()
+    }, [])
 
     const menuItems = [...new Set(items.map((val) => val.categoria))]
 

@@ -67,8 +67,8 @@
   },
   {
     "nombre": "Severus Snape",
-    "subtitle": "Maestro de Pociones y Defensa de las Artes Oscuras",
-    "descript": "Bruja", 
+    "subtitle": "Maestro de Pociones y Defensa contra las Artes Oscuras",
+    "descript": "Severus Snape fue un mago excepcional, cuyas destrezas fueron cruciales para las dos guerras mágicas contra Lord Voldemort. Destacó en su habilidad en el Duelo, Magia curativa, Oclumancia y Legeremancia, Pociones y Defensa contra las Artes Oscuras.", 
     "imagen": "./src/img/Potioneers/Severus Snape.png"
   },
   {

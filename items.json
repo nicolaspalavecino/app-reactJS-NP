@@ -5,7 +5,7 @@
     "precio": 500,
     "categoria": "Ingredientes",
     "descript": "250 g | Aunque sus hojas son tóxicas, las flores se suele utilizar para la Pociones Matalobos y la Pociones de Despertares.", 
-    "imagen": "./src/img/ingredients/Acónito.png"
+    "imagen": "/src/img/ingredients/Acónito.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "precio": 2500,
     "categoria": "Ingredientes",
     "descript": "100 mL | El Lethe es un río cuya locación no debe ser revelada, pero su agua posee propiedades que inducen pérdida de la memoria.",
-    "imagen": "./src/img/ingredients/Agua de Río Lethe.png"
+    "imagen": "/src/img/ingredients/Agua de Río Lethe.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "precio": 1250,
     "categoria": "Ingredientes",
     "descript": "200 mL | Precaución al utilizar, el exceso puede provocar levitación. Se usa para Pociones de Despertares, Crecépolo y Antídoto para venenos.",
-    "imagen": "./src/img/ingredients/Aguijones secos de billywig.png"
+    "imagen": "/src/img/ingredients/Aguijones secos de billywig.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "precio": 400,
     "categoria": "Ingredientes",
     "descript": "250 g | Se utiliza para pociones curativas y la pócima para dormir. En el mundo muggle se utiliza en medicina y como antipulgas.",
-    "imagen": "./src/img/ingredients/Ajenjo.png"
+    "imagen": "/src/img/ingredients/Ajenjo.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "precio": 1750,
     "categoria": "Ingredientes",
     "descript": "100 g | Las hadas son muy difíciles de capturar. Sus alas cubiertas de polvo mágico se usan para la Poción Vigorizante y la Embellecedora.",
-    "imagen": "./src/img/ingredients/Alas de hada.png"
+    "imagen": "/src/img/ingredients/Alas de hada.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "precio": 1050,
     "categoria": "Ingredientes",
     "descript": "100 g | Se utiliza en varias pociones, pero su principal función es como un componente de la Mezcla de bilis de armadillo.",
-    "imagen": "./src/img/ingredients/Alas de murciélago.png"
+    "imagen": "/src/img/ingredients/Alas de murciélago.png"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "precio": 650,
     "categoria": "Ingredientes",
     "descript": "150 g | Es utilizada en la famosa Pociones de Embellecimiento elaborada por el experto en pociones, Zygmunt Budge.",
-    "imagen": "./src/img/ingredients/Alchemilla.png"
+    "imagen": "/src/img/ingredients/Alchemilla.png"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "precio": 1500,
     "categoria": "Equipo",
     "descript": "250 mL | Recipiente de vidrio destinado al almacenamiento de reactivos para la preparación de pociones y elíxires.",
-    "imagen": "./src/img/materials/Ampolla de vidrio.png"
+    "imagen": "/src/img/materials/Ampolla de vidrio.png"
   },
   
   {
@@ -70,7 +70,7 @@
     "precio": 540,
     "categoria": "Ingredientes",
     "descript": "150 g | Es empleado en el Filtro de Muertos en Vida, teniendo en cuenta que es considerada la comida favorita de los muertos.",
-    "imagen": "./src/img/ingredients/Asfódelos.png"
+    "imagen": "/src/img/ingredients/Asfódelos.png"
   },
   {
     "id": 10,
@@ -78,7 +78,7 @@
     "precio": 700,
     "categoria": "Ingredientes",
     "descript": "250 g | Son utilizadas como ingrediente en la preparación de la Poción Curadora de Forúnculos, dando un humo rosado característico.",
-    "imagen": "./src/img/ingredients/Babosas cornudas.png"
+    "imagen": "/src/img/ingredients/Babosas cornudas.png"
   },
   {
     "id": 11,
@@ -86,7 +86,7 @@
     "precio": 3500,
     "categoria": "Equipo",
     "descript": "Equipo destinado para el pesaje de los materiales e ingredientes utilizados en la preparación de pociones.",
-    "imagen": "./src/img/materials/Balanza de latón.png"
+    "imagen": "/src/img/materials/Balanza de latón.png"
   },  
   {
     "id": 12,
@@ -94,7 +94,7 @@
     "precio": 350,
     "categoria": "Ingredientes",
     "descript": "500 g | Las bayas blancas y cerosas son usadas en la preparación del Antídoto para Venenos Comunes y la Poción del Olvido.",
-    "imagen": "./src/img/ingredients/Bayas de muérdago.png"
+    "imagen": "/src/img/ingredients/Bayas de muérdago.png"
   },
   {
     "id": 13,
@@ -102,7 +102,7 @@
     "precio": 850,
     "categoria": "Ingredientes",
     "descript": "500 g | El polvo se diluye y se utiliza en pociones como la Solución para Encoger o el Fertilizante de Estiercol de Dragón.",
-    "imagen": "./src/img/ingredients/Bazo de rata en polvo.png"
+    "imagen": "/src/img/ingredients/Bazo de rata en polvo.png"
   },
   {
     "id": 14,
@@ -110,7 +110,7 @@
     "precio": 1200,
     "categoria": "Ingredientes",
     "descript": "250 g | El bazo de murciélago debe ser molido antes de su uso y se emplea para la preparación de la Poción Agrandadora.",
-    "imagen": "./src/img/ingredients/Bazos de murciélago.png"
+    "imagen": "/src/img/ingredients/Bazos de murciélago.png"
   },
   {
     "id": 15,
@@ -118,7 +118,7 @@
     "precio": 750,
     "categoria": "Ingredientes",
     "descript": "250 g | Es una piedra tomada del estómago de una cabra y actúa como antídoto contra la mayoría de los venenos, menos el de Basilisco.",
-    "imagen": "./src/img/ingredients/Bezoar.png"
+    "imagen": "/src/img/ingredients/Bezoar.png"
   },
   {
     "id": 16,
@@ -126,7 +126,7 @@
     "precio": 450,
     "categoria": "Ingredientes",
     "descript": "500 g | Utilizada para una gran variedad de pócimas como la Poción del Olvido, la Pócima para dormir y el Brebaje Parlanchín.",
-    "imagen": "./src/img/ingredients/Brotes de valeriana.png"
+    "imagen": "/src/img/ingredients/Brotes de valeriana.png"
   },
   {
     "id": 17,
@@ -134,7 +134,7 @@
     "precio": 5000,
     "categoria": "Equipo",
     "descript": "2000 mL | El cobre es un metal dúctil y maleable. Elabora pociones de manera más eficaz que el resto de los calderos.",
-    "imagen": "./src/img/materials/Caldero de cobre.png"
+    "imagen": "/src/img/materials/Caldero de cobre.png"
   },
   {
     "id": 18,
@@ -142,7 +142,7 @@
     "precio": 4500,
     "categoria": "Equipo",
     "descript": "2000 mL | El latón es una aleación de cobre y zinc. Presenta una mayor eficacia que los calderos de peltre o plata para preparar pócimas.",
-    "imagen": "./src/img/materials/Caldero de latón.png"
+    "imagen": "/src/img/materials/Caldero de latón.png"
   },
   {
     "id": 19,
@@ -150,7 +150,7 @@
     "precio": 4250,
     "categoria": "Equipo",
     "descript": "2000 mL | La plata es un metal blanco, brillante y dúctil. Este tipo de caldero se necesita específicamente para la Poción para inducir el sueño.",
-    "imagen": "./src/img/materials/Caldero de plata.png"
+    "imagen": "/src/img/materials/Caldero de plata.png"
   },
 
   {
@@ -159,7 +159,7 @@
     "precio": 750,
     "categoria": "Ingredientes",
     "descript": "500 mL | Solución utilizada para la preparación de la Solución encogedora y el Doxycida (Paralizante para Doxys).",
-    "imagen": "./src/img/ingredients/Cicuta virosa.png"
+    "imagen": "/src/img/ingredients/Cicuta virosa.png"
   },
   {
     "id": 21,
@@ -167,7 +167,7 @@
     "precio": 650,
     "categoria": "Ingredientes",
     "descript": "100 g | Molienda de las flores de la planta venenosa. Debe ser diluida antes de utilizar en la preparación de pociones y repelentes.",
-    "imagen": "./src/img/ingredients/Cicuta.png"
+    "imagen": "/src/img/ingredients/Cicuta.png"
   },
   {
     "id": 22,
@@ -175,7 +175,7 @@
     "precio": 500,
     "categoria": "Ingredientes",
     "descript": "100 g | Son extraídos de serpientes NO venenosas. Se utilizan el la Poción Curadora de Forúnculos y la Poción de Despertares.",
-    "imagen": "./src/img/ingredients/Colmillos de serpiente.png"
+    "imagen": "/src/img/ingredients/Colmillos de serpiente.png"
   },
   {
     "id": 23,
@@ -183,7 +183,7 @@
     "precio": 600,
     "categoria": "Ingredientes",
     "descript": "500 g | Los crisopos son insectos verdes y pequeños con alas transparentes. Se utilizan en la Poción Multijugos.",
-    "imagen": "./src/img/ingredients/Moscas de encaje.png"
+    "imagen": "/src/img/ingredients/Moscas de encaje.png"
   },
   {
     "id": 24,
@@ -191,7 +191,7 @@
     "precio": 1200,
     "categoria": "Ingredientes",
     "descript": "1 unidad | Es un ingrediente muy raro de conseguir y se emplea para la Poción Multijugos y la Poción Pimentónica.",
-    "imagen": "./src/img/ingredients/Cuerno de Bicornio.png"
+    "imagen": "/src/img/ingredients/Cuerno de Bicornio.png"
   },
   {
     "id": 25,
@@ -199,7 +199,7 @@
     "precio": 1000,
     "categoria": "Ingredientes",
     "descript": "1 unidad | Es un ingrediente fundamental en la elaboración del Antídoto para Venenos Comunes, el Filtro de Paz y la Poción Oculus.",
-    "imagen": "./src/img/ingredients/Cuerno de unicornio.png"
+    "imagen": "/src/img/ingredients/Cuerno de unicornio.png"
   },
   {
     "id": 26,
@@ -207,7 +207,7 @@
     "precio": 500,
     "categoria": "Ingredientes",
     "descript": "500 g | Es una hierba curativa y reconstituyente. Al aplicarse sobre una herida, crece piel fresca y le da un aspecto de varios días.",
-    "imagen": "./src/img/ingredients/Díctamo.png"
+    "imagen": "/src/img/ingredients/Díctamo.png"
   },
   {
     "id": 27,
@@ -215,7 +215,7 @@
     "precio": 350,
     "categoria": "Ingredientes",
     "descript": "500 g | Se utiliza en la Poción Curadora de Forúnculos, la Poción herbicida y el Elixir para inducir Euforia.",
-    "imagen": "./src/img/ingredients/Espina de puercospín.png"
+    "imagen": "/src/img/ingredients/Espina de puercospín.png"
   },
   {
     "id": 28,
@@ -223,7 +223,7 @@
     "precio": 500,
     "categoria": "Ingredientes",
     "descript": "500 g | Hechas polvo, estas espinas pueden utilizarse en pociones curativas como la Poción Herbovitalizante.",
-    "imagen": "./src/img/ingredients/Espinas de pez león.png"
+    "imagen": "/src/img/ingredients/Espinas de pez león.png"
   },
   {
     "id": 29,
@@ -231,7 +231,7 @@
     "precio": 4750,
     "categoria": "Pociones",
     "descript": "1 Dosis | Incrementa la suerte del consumidor durante un período. Su exceso produce atolondronamiento y exceso de confianza.",
-    "imagen": "./src/img/potions/Felix Felicis.png"
+    "imagen": "/src/img/potions/Felix Felicis.png"
   },
   {
     "id": 30,
@@ -239,7 +239,7 @@
     "precio": 780,
     "categoria": "Ingredientes",
     "descript": "200 g | Esta hierba es recogida en luna llena y es utilizada en la Poción Multijugos. Se requieren 1656 escrúpulos para hacer esta poción.",
-    "imagen": "./src/img/ingredients/Fluxweed.png"
+    "imagen": "/src/img/ingredients/Fluxweed.png"
   },
   {
     "id": 31,
@@ -247,7 +247,7 @@
     "precio": 800,
     "categoria": "Equipo",
     "descript": "100 mL | Recipiente de vidrio destinado al almacenamiento de reactivos para la preparación de pociones y elíxires.",
-    "imagen": "./src/img/materials/Frasco de vidrio.png"
+    "imagen": "/src/img/materials/Frasco de vidrio.png"
   },
   {
     "id": 32,
@@ -255,7 +255,7 @@
     "precio": 780,
     "categoria": "Ingredientes",
     "descript": "500 g | Los gusanos pueden ser procesados o molidos y su aceite se emplea utiliza en la preparación de pociones.",
-    "imagen": "./src/img/ingredients/Gusano de tubo gigante.png"
+    "imagen": "/src/img/ingredients/Gusano de tubo gigante.png"
   },
   {
     "id": 33,
@@ -263,7 +263,7 @@
     "precio": 800,
     "categoria": "Ingredientes",
     "descript": "500 g | La hierba nudosa o centinodia es utilizada como uno de los ingredientes principales de la Poción Multijugos.",
-    "imagen": "./src/img/ingredients/Hierba nudosa.png"
+    "imagen": "/src/img/ingredients/Hierba nudosa.png"
   },
   {
     "id": 34,
@@ -271,7 +271,7 @@
     "precio": 500,
     "categoria": "Ingredientes",
     "descript": "500 g | Es un ingrediente usado en la elaboración del Elixir para inducir Euforia y en la famosa Solución para encoger de Zygmunt Budge.",
-    "imagen": "./src/img/ingredients/Higo desecado.png"
+    "imagen": "/src/img/ingredients/Higo desecado.png"
   },
   {
     "id": 35,
@@ -279,7 +279,7 @@
     "precio": 700,
     "categoria": "Ingredientes",
     "descript": "250 g | Los doxys son criaturas similares a las hadas y sus huevos se utilizan en pócimas como la Poción Vigorizante.",
-    "imagen": "./src/img/ingredients/Huevos de doxxy.png"
+    "imagen": "/src/img/ingredients/Huevos de doxxy.png"
   },
   {
     "id": 36,
@@ -287,7 +287,7 @@
     "precio": 750,
     "categoria": "Ingredientes",
     "descript": "500 mL | Esta solución de ajenjo se utiliza junto al polvo de raíz de asfódelo para crear el Filtro de Muertos en Vida. ",
-    "imagen": "./src/img/ingredients/Infusión de ajenjo.png"
+    "imagen": "/src/img/ingredients/Infusión de ajenjo.png"
   },
   {
     "id": 37,
@@ -295,7 +295,7 @@
     "precio": 600,
     "categoria": "Ingredientes",
     "descript": "500 mL | Los horklumps son hongos originarios de Escandinavia cuyo jugo es empleado en pociones herbicidas y herbovitalizantes.",
-    "imagen": "./src/img/ingredients/Jugo de horklump.png"
+    "imagen": "/src/img/ingredients/Jugo de horklump.png"
   },
   {
     "id": 38,
@@ -303,7 +303,7 @@
     "precio": 400,
     "categoria": "Ingredientes",
     "descript": "500 g | Las ramitas de lavanda se utilizan para la Pócima para Dormir, la Poción de Aliento de Fuego y la Poción Calmante.",
-    "imagen": "./src/img/ingredients/Lavanda.png"
+    "imagen": "/src/img/ingredients/Lavanda.png"
   },
   {
     "id": 39,
@@ -311,7 +311,7 @@
     "precio": 550,
     "categoria": "Ingredientes",
     "descript": "250 mL | Sustancia viscosa extraída de los gusarajos. Es utilizada en la Poción Herbovitalizante y el Antídoto de Venenos Comunes. ",
-    "imagen": "./src/img/ingredients/Moco de gusarajo.png"
+    "imagen": "/src/img/ingredients/Moco de gusarajo.png"
   },
   {
     "id": 40,
@@ -319,7 +319,7 @@
     "precio": 3500,
     "categoria": "Equipo",
     "descript": "Cuenco y mazo de piedra utilizado para moler los ingredientes destinados a la preparación de pociones y elíxires.",
-    "imagen": "./src/img/materials/Mortero.png"
+    "imagen": "/src/img/materials/Mortero.png"
   },
   {
     "id": 41,
@@ -327,7 +327,7 @@
     "precio": 750,
     "categoria": "Ingredientes",
     "descript": "250 g | Es utilizado como ingrediente en la Poción de la Memoria y en la Cura para Spattergroit, una enfermedad mágica muy contagiosa.",
-    "imagen": "./src/img/ingredients/Ojos de anguila.png"
+    "imagen": "/src/img/ingredients/Ojos de anguila.png"
   },
   {
     "id": 42,
@@ -335,7 +335,7 @@
     "precio": 810,
     "categoria": "Ingredientes",
     "descript": "250 g | Son muy difíciles de purificar. Se utilizan en la Poción de la Percepción y para preparar la Esencia de la Locura.",
-    "imagen": "./src/img/ingredients/Ojos de escarabajo.png"
+    "imagen": "/src/img/ingredients/Ojos de escarabajo.png"
   },
   {
     "id": 43,
@@ -343,7 +343,7 @@
     "precio": 950,
     "categoria": "Ingredientes",
     "descript": "500 mL | Los ojos secretan una solución con propiedades mágicas y se emplea particularmente para la Poción Agrandadora.",
-    "imagen": "./src/img/ingredients/Ojos de pez globo.png"
+    "imagen": "/src/img/ingredients/Ojos de pez globo.png"
   },
   {
     "id": 44,
@@ -351,7 +351,7 @@
     "precio": 650,
     "categoria": "Ingredientes",
     "descript": "500 mL | Aceite extraido de los pétalos de rosas. Es utilizado en la Poción Embelledora y en diversas pócimas de amor.",
-    "imagen": "./src/img/ingredients/Óleo de rosa.png"
+    "imagen": "/src/img/ingredients/Óleo de rosa.png"
   },
   {
     "id": 45,
@@ -359,7 +359,7 @@
     "precio": 400,
     "categoria": "Ingredientes",
     "descript": "500 g | La infusión de esta hierba tiene propiedades curativas. Se utiliza en la preparación de la Poción Curadora de Forúnculos.",
-    "imagen": "./src/img/ingredients/Ortiga seca.png"
+    "imagen": "/src/img/ingredients/Ortiga seca.png"
   },
   {
     "id": 46,
@@ -367,7 +367,7 @@
     "precio": 850,
     "categoria": "Ingredientes",
     "descript": "500 g | Los abraxan son caballos alados. Su cabello se utiliza para la Poción Exstímulo que potencia los hechizos de quien la bebe.",
-    "imagen": "./src/img/ingredients/Pelo de abraxan.png"
+    "imagen": "/src/img/ingredients/Pelo de abraxan.png"
   },
   {
     "id": 47,
@@ -375,7 +375,7 @@
     "precio": 800,
     "categoria": "Ingredientes",
     "descript": "250 g | La piel de boomslang, una serpiene arbórea africana, se emplea como un ingrediente para la Poción Multijugos.",
-    "imagen": "./src/img/ingredients/Piel de boomslang.png"
+    "imagen": "/src/img/ingredients/Piel de boomslang.png"
   },
   {
     "id": 48,
@@ -383,7 +383,7 @@
     "precio": 3500,
     "categoria": "Pociones",
     "descript": "500 mL | Transforma la apariencia del bebedor, haciéndolo parecer atractivo. Sólo es efectivo durante un tiempo limitado.",
-    "imagen": "./src/img/potions/Poción de embellecimiento.png"
+    "imagen": "/src/img/potions/Poción de embellecimiento.png"
   },
   {
     "id": 49,
@@ -391,7 +391,7 @@
     "precio": 3500,
     "categoria": "Pociones",
     "descript": "500 mL | Cuanto más se bebe la poción, el envejecimiento es mayor. Los efectos de esta poción son temporales.",
-    "imagen": "./src/img/potions/Poción de envejecimiento.png"
+    "imagen": "/src/img/potions/Poción de envejecimiento.png"
   },
   {
     "id": 50,
@@ -399,7 +399,7 @@
     "precio": 500,
     "categoria": "Ingredientes",
     "descript": "500 g | Las hojas y raíces de la ruda tienen propiedades curativas. Es un ingrediente escencial en la preparación de antídotos.",
-    "imagen": "./src/img/ingredients/Ruda común.png"
+    "imagen": "/src/img/ingredients/Ruda común.png"
   },
   {
     "id": 51,
@@ -407,7 +407,7 @@
     "precio": 1000,
     "categoria": "Ingredientes",
     "descript": "100 mL | Debe usarse con precaución. Es un ingrediente destinado al uso de soluciones de limpieza y pociones curativas.",
-    "imagen": "./src/img/ingredients/Sangre de dragón.png"
+    "imagen": "/src/img/ingredients/Sangre de dragón.png"
   },
   {
     "id": 52,
@@ -415,7 +415,7 @@
     "precio": 750,
     "categoria": "Ingredientes",
     "descript": "250 mL | Tiene propiedades curativas, un gran poder de rejuvenecimiento y se utilizan para preparar soluciones fortificantes.",
-    "imagen": "./src/img/ingredients/Sangre de salamandra.png"
+    "imagen": "/src/img/ingredients/Sangre de salamandra.png"
   }, 
   {
     "id": 53,
@@ -423,7 +423,7 @@
     "precio": 500,
     "categoria": "Ingredientes",
     "descript": "500 g | Se utilizan en el tratamiento de ciertas enfermedades y también como ingrediente para pócimas como la Poción Multijugos.",
-    "imagen": "./src/img/ingredients/Sanguijuelas.png"
+    "imagen": "/src/img/ingredients/Sanguijuelas.png"
   },
   {
     "id": 54,
@@ -431,7 +431,7 @@
     "precio": 4000,
     "categoria": "Pociones",
     "descript": "500 mL | La poción crecehuesos, a pesar de su horrible sabor, tiene el potencial de reparar huesos rotos e incluso regenerarlos.",
-    "imagen": "./src/img/potions/Skelegro.png"
+    "imagen": "/src/img/potions/Skelegro.png"
   },
   {
     "id": 55,
@@ -439,7 +439,7 @@
     "precio": 800,
     "categoria": "Ingredientes",
     "descript": "300 g | Es una sustancia mágica extraida de Demiguise, utilizada como ingrediente de la Poción de Inivisibilidad.",
-    "imagen": "./src/img/ingredients/Tintura de demiguise.png"
+    "imagen": "/src/img/ingredients/Tintura de demiguise.png"
   },
   {
     "id": 56,
@@ -447,7 +447,7 @@
     "precio": 500,
     "categoria": "Ingredientes",
     "descript": "500 g | Al ser tostados adquieren gran potencial en la elaboración de pociones. Es utilizada para la Poción Vigorizante.",
-    "imagen": "./src/img/ingredients/Tórax de libélulas.png"
+    "imagen": "/src/img/ingredients/Tórax de libélulas.png"
   },
   {
     "id": 57,
@@ -455,6 +455,6 @@
     "precio": 1350,
     "categoria": "Ingredientes",
     "descript": "200 mL | Importante utilizar medidas de protección en su manipulación. Se emplea para preparar la Poción de Inivisibilidad.",
-    "imagen": "./src/img/ingredients/Veneno de acromántula.png"
+    "imagen": "/src/img/ingredients/Veneno de acromántula.png"
   }
 ]

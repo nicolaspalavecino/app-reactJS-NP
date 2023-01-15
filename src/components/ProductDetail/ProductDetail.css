@@ -22,7 +22,7 @@
 
 .detail-info-container h2 {
     color: white;
-    font-size:5vw;
+    font-size: 5vw;
     text-align: left;
     padding: 0;
 }
@@ -30,7 +30,29 @@
 .detail-info-container h3 {
     color: whitesmoke;
     font-size: 4vw;
+    width: 100%;
+    border-bottom: solid 1px white;
+    margin-bottom: 5%;
 }
 
+@media (max-width: 480px) {
+    .detail-product-container {
+        flex-direction: column;
+    }
+
+    .detail-image-container, .detail-info-container {
+        width: 80vw;
+    }
+
+    .detail-info-container h2 {
+        font-size: 10vw;
+    }
+
+    .detail-info-container h3 {
+        font-size: 8vw;
+    }
+
+    
+}
 
 
