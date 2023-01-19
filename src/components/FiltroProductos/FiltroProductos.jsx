@@ -1,4 +1,5 @@
 import './FiltroProductos.css'
+import { Link } from 'react-router-dom'
 import items from '../../../items.json'
 
 const FiltroProductos = ({ filterItem, setItem, menuItems }) => {

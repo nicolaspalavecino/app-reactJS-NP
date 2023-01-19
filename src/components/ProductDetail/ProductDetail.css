@@ -1,55 +1,91 @@
 .detail-product-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 80vh;
-    background-color: black;
     gap: 1vw;
+    height: 80vh;
+    width: 100%;
+    z-index: -2;
+    position: absolute;
+}
+
+.detail-up-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .detail-image-container {
     width: 45vw;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.detail-info-container {
-    width: 45vw;
-    height: 60vh;
-    background-color: #A98754;
+.detail-image-container img{
+    height: 300px;
+    object-fit: contain;
     padding: 2vw;
 }
 
-.detail-info-container h2 {
-    color: white;
-    font-size: 5vw;
+.detail-title-container {
+    width: 45vw;
+}
+
+.detail-title-container h2 {
+    color: #A98754;
+    font-size: xx-large;
     text-align: left;
     padding: 0;
 }
 
-.detail-info-container h3 {
-    color: whitesmoke;
-    font-size: 4vw;
+.detail-title-container h3 {
+    color: #A98754;
+    font-size: x-large;
     width: 100%;
     border-bottom: solid 1px white;
     margin-bottom: 5%;
 }
 
+.detail-info-container {
+    width: 90vw;
+    background-color: #a98754e5;
+    padding: 2vw;
+}
+
+.detail-info-container p {
+    font-size: large;
+    width: 100%;
+}
+
+
 @media (max-width: 480px) {
     .detail-product-container {
         flex-direction: column;
+        height: 110vh;
+        padding: 10vw 0;
+    }
+
+    .detail-up-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .detail-image-container, .detail-info-container {
-        width: 80vw;
+        width: 80%;
     }
 
-    .detail-info-container h2 {
+    .detail-title-container h2 {
         font-size: 10vw;
+        text-align: center;
     }
 
-    .detail-info-container h3 {
+    .detail-title-container h3 {
         font-size: 8vw;
+        text-align: center;
     }
 
     
