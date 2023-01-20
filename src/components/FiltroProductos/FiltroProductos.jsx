@@ -9,14 +9,18 @@ const FiltroProductos = ({ filterItem, setItem, menuItems }) => {
         <div className="filtros-container">
           {menuItems.map((val, index) => {
             return (
+            <Link to={`/productos/${val}`}>
               <button className="btn-filtrar btn-categoria" key={index} onClick={()=> filterItem(val)}>
                 {val}
               </button>
+             </Link> 
             )
           })}
-          <button className="btn-filtrar btn-todos" onClick={() => setItem(items)}>
-            Todos
-          </button>
+          <Link to="/productos">
+            <button className="btn-filtrar btn-todos" onClick={() => setItem(items)}>
+              Todos
+            </button>
+          </Link>
          </div>
       </>
     )

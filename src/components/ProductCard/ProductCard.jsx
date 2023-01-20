@@ -1,12 +1,12 @@
 import './ProductCard.css'
 import { Link } from 'react-router-dom'
 
-const ProductCard = ({ id, nombre, precio, imagen }) => {
+const ProductCard = ({ id, nombre, categoria, precio, imagen }) => {
 
     const quantity = 0
     return (
         <div key={id} className='card-container'>
-            <Link to={`${nombre}`}>
+            <Link to={`/productos/${categoria}/${nombre}`}>
                 <h3 className='card-nombre'>{nombre}</h3>
             </Link>
             <div className='card-image-container'>

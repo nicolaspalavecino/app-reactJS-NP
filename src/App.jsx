@@ -17,7 +17,8 @@ function App() {
             <Route path='/' element={<Inicio greeting={"Bienvenidos al Caldero Humeante"}/>} />
             <Route path='/nosotros' element={<Nosotros />} />
             <Route path='/productos' element={<Productos />} />
-            <Route path='/productos/:nombre' element={<ProductDetail data={items} />} />
+            <Route path='/productos/:categoria' element={<Productos />} />
+            <Route path='/productos/:categoria/:nombre' element={<ProductDetail data={items} />} />
             <Route path='/contacto' element={<Contacto />} />
             <Route path='*' element={<Navigate to='/' />} />
           </Routes>
