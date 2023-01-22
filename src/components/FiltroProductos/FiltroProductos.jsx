@@ -13,7 +13,7 @@ const FiltroProductos = ({ filterItem, setItem, menuItems }) => {
               <button className="btn-filtrar btn-categoria" key={index} onClick={()=> filterItem(val)}>
                 {val}
               </button>
-             </Link> 
+            </Link> 
             )
           })}
           <Link to="/productos">

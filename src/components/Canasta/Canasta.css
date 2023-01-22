@@ -19,7 +19,6 @@ button.chakra-button.btn-canasta.css-i857na {
     color: white;
     border-bottom: 1px dashed white;
     padding: 15px;
-
 }
 
 .item-cart-count {
@@ -31,4 +30,39 @@ button.chakra-button.btn-canasta.css-i857na {
     position: absolute;
     top: -7px;
     right: 8px;
+}
+
+table {
+    width: 100%;
+}
+
+table, tr {
+    border: #886d46 solid 1px;
+}
+
+th {
+    color: white;
+    background-color: #886d46;
+    padding: 5px;
+}
+
+tbody {
+    background-color: #ffffffd7;
+}
+
+td {
+    padding: 3px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.table-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.table-product img {
+    width: 20%;
+    margin: 5px;
 }

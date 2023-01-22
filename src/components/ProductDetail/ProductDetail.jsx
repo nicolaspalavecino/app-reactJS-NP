@@ -1,5 +1,6 @@
 import './ProductDetail.css'
 import { useParams } from "react-router-dom"
+import BtnChangeCanasta from '../BtnChangeCanasta/BtnChangeCanasta'
 
 const ProductDetail = ({ data }) => {
 	const { nombre } = useParams()
@@ -14,6 +15,11 @@ const ProductDetail = ({ data }) => {
 				<div className='detail-title-container'>
 					<h2>{item.nombre}</h2>
 					<h3>${item.precio}</h3>
+					<BtnChangeCanasta
+                		nombre={item.nombre}
+                		precio={item.precio}
+						imagen={item.imagen}
+            		/>
 				</div>
 			</div>
 			<div className='detail-info-container'>

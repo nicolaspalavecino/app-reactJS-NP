@@ -1,9 +1,11 @@
 import './ProductCard.css'
 import { Link } from 'react-router-dom'
+import { CartContext } from '../../context/CartContext'
+import { useContext } from 'react'
+import BtnChangeCanasta from '../BtnChangeCanasta/BtnChangeCanasta'
 
 const ProductCard = ({ id, nombre, categoria, precio, imagen }) => {
 
-    const quantity = 0
     return (
         <div key={id} className='card-container'>
             <Link to={`/productos/${categoria}/${nombre}`}>
@@ -13,22 +15,11 @@ const ProductCard = ({ id, nombre, categoria, precio, imagen }) => {
                 <img src={imagen} />
             </div>
             <h4 className='card-precio'>$ {precio}</h4>
-            <div className='add-container'>
-                {quantity === 0 ? (
-                    <button className='btn-add-product'>
-                        <p>+ CANASTA</p>
-                    </button>
-                ) : 
-                    <div className='add-variant'>
-                        <div className='add-quantity'>
-                            <button>+</button>
-                            <p><span>{quantity}</span> en Canasta</p>
-                            <button>-</button>
-                        </div>
-                        <button className='remove' onClick={()=> removeCartItem(id)}>Eliminar</button>
-                    </div> 
-                }
-            </div>
+            <BtnChangeCanasta 
+                nombre={nombre}
+                precio={precio}
+                imagen={imagen}
+            />
         </div>
         )
 }
