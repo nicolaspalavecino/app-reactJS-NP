@@ -5,6 +5,7 @@ import Nosotros from './pages/Nosotros/Nosotros.jsx'
 import Productos from './pages/Productos/Productos.jsx'
 import ProductDetail from './components/ProductDetail/ProductDetail.jsx'
 import Contacto from './pages/Contacto/Contacto.jsx'
+import Cart from './pages/Cart/Cart'
 import { Route, Routes, Navigate } from 'react-router-dom'
 import items from '../items.json'
 import { CartProvider } from './context/CartContext'
@@ -22,6 +23,7 @@ function App() {
               <Route path='/productos/:categoria' element={<Productos />} />
               <Route path='/productos/:categoria/:nombre' element={<ProductDetail data={items} />} />
               <Route path='/contacto' element={<Contacto />} />
+              <Route path='/canasta' element={<Cart />} />
               <Route path='*' element={<Navigate to='/' />} />
             </Routes>
           </div>

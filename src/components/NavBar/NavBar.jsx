@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { ImCross, ImMenu } from 'react-icons/im'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import LogoCalderoHumeante from '../../img/LogoCalderoHumeante.png'
-import Canasta from '../Canasta/Canasta'
+import CartWidget from '../CartWidget/CartWidget'
 
 const NavBar = () => {
     const [menu, setMenu] = useState(false)
@@ -18,7 +18,7 @@ const NavBar = () => {
         </Link>
         <div className='navbar-container'>
             <div className='carrito-container'>
-                <Canasta />
+                <CartWidget />
             </div>
             <div className='menu-icon'>
                 <button className='hamburger-menu' onClick={handleClick}>

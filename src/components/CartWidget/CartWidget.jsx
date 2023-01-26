@@ -1,11 +1,12 @@
 import '../NavBar/NavBar.css'
-import './Canasta.css'
+import './CartWidget.css'
 import { Button, Tooltip, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
 import LogoCanasta from '../../img/LogoCanasta.png'
 import { CartContext } from '../../context/CartContext'
 import { useContext } from 'react'
+import { Link } from 'react-router-dom'
 
-const Canasta = () => {
+const CartWidget = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [cart, setCart] = useContext(CartContext)
     const precioTotal = cart.reduce((acc, curr) => acc + curr.precio, 0)
@@ -26,7 +27,7 @@ const Canasta = () => {
                         {cart.map((item) => {
                             return (
                             <tr>
-                                <td>???</td>
+                                <td>-</td>
                                 <td className='table-product'>
                                   <img src={item.imagen} />
                                   {item.nombre}
@@ -42,8 +43,8 @@ const Canasta = () => {
           )
       } else {
           return (
-              <div className='carrito_vacio-container'>
-                  Incorpore productos a su compra
+              <div className='carrito-vacio-container'>
+                Incorpore productos a su compra
               </div>
           )
       }
@@ -66,9 +67,11 @@ const Canasta = () => {
               {TablaCarrito()}
             </ModalBody>
             <ModalFooter>
-              <Button className='brn-comprar'>
-                Comprar
-              </Button>
+              <Link to={'/canasta'}>
+                <Button onClick={onClose}>
+                  Ver compra
+                </Button>
+              </Link>
             </ModalFooter>
           </ModalContent>
         </Modal>
@@ -77,4 +80,4 @@ const Canasta = () => {
   }
 
 
-export default Canasta
+export default CartWidget
