@@ -4,7 +4,6 @@ import Prod1Banner from '../../img/Prod1-logo.png'
 import Prod2Banner from '../../img/Prod2-logo.png'
 import FiltroProductos from '../../components/FiltroProductos/FiltroProductos'
 import { useEffect, useState } from 'react'
-// import items from '../../../items.json'
 import { db } from '../../../db/firebase-config'
 import { collection, getDocs, orderBy, query } from 'firebase/firestore'
 

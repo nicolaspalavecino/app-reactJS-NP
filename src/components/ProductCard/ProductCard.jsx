@@ -1,7 +1,5 @@
 import './ProductCard.css'
 import { Link } from 'react-router-dom'
-import { CartContext } from '../../context/CartContext'
-import { useContext } from 'react'
 import BtnChangeCanasta from '../BtnChangeCanasta/BtnChangeCanasta'
 
 const ProductCard = ({ id, nombre, categoria, precio, imagen }) => {
