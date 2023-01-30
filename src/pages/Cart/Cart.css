@@ -6,9 +6,21 @@
     padding: 5%;
 }
 
-.cart h2 {
-    padding: 0;
+.cart-sup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-sup h2 {
+    padding: 0 0 0 15px;
+    font-size: x-large;
     text-align: start;
+}
+
+.cart-sup img {
+    height: 80px;
 }
 
 tbody tr {

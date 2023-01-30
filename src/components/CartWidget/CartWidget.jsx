@@ -2,6 +2,7 @@ import '../NavBar/NavBar.css'
 import './CartWidget.css'
 import { Button, Tooltip, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
 import LogoCanasta from '../../img/LogoCanasta.png'
+import LogoCanastaFull from '../../img/LogoCanastaFull.png'
 import { CartContext } from '../../context/CartContext'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
@@ -58,7 +59,7 @@ const CartWidget = () => {
       <>
         <Tooltip hasArrow label='Canasta de Compras' bg='#634f31'>
           <Button onClick={onOpen} className='btn-canasta'>
-              <img src={LogoCanasta} />
+              <img src={cart.length > 0 ? LogoCanastaFull : LogoCanasta} />
               <span className='item-cart-count'>{cart.length}</span>
           </Button>
         </Tooltip>

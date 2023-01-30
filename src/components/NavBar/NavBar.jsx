@@ -5,6 +5,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import LogoCalderoHumeante from '../../img/LogoCalderoHumeante.png'
 import CartWidget from '../CartWidget/CartWidget'
 
+
 const NavBar = () => {
     const [menu, setMenu] = useState(false)
     const handleClick = () => { setMenu(!menu) }
