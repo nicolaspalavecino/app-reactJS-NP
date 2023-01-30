@@ -1,8 +1,11 @@
 import './FiltroProductos.css'
 import { Link } from 'react-router-dom'
-import items from '../../../items.json'
+// import items from '../../../items.json'
 
-const FiltroProductos = ({ filterItem, setItem, menuItems }) => {
+import { db } from '../../../db/firebase-config'
+import { collection, getDocs } from 'firebase/firestore'
+
+const FiltroProductos = ({ filterItem, allItems, menuItems }) => {
 
     return (
       <>
@@ -17,7 +20,7 @@ const FiltroProductos = ({ filterItem, setItem, menuItems }) => {
             )
           })}
           <Link to="/productos">
-            <button className="btn-filtrar btn-todos" onClick={() => setItem(items)}>
+            <button className="btn-filtrar btn-todos" onClick={() => allItems()}>
               Todos
             </button>
           </Link>
