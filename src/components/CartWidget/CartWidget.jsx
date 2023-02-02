@@ -49,7 +49,7 @@ const CartWidget = () => {
     } else {
       return (
         <div className='carrito-vacio-container'>
-          Incorpore productos a su compra
+          No hay productos en su canasta.
         </div>
       )
       }

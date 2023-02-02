@@ -3,10 +3,23 @@ import LogoCanasta from '../../img/LogoCanasta.png'
 import LogoCanastaFull from '../../img/LogoCanastaFull.png'
 import { CartContext } from '../../context/CartContext'
 import { useContext } from 'react'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
   const [cart, setCart] = useContext(CartContext)
   const precioTotal = cart.reduce((acc, curr) => acc + curr.precio, 0)
+
+	const removeCartItem = (nombre) => {
+		const arr = cart.filter((i) => i.nombre !== nombre)
+		setCart(arr)
+	}
+
+	const cantItem = (item) => {
+		const cantidad = (cart.filter((x) => x.nombre == item.nombre)).length
+		return cantidad
+	}
+
+	// Utilizar una función para recorrer cart e iterar para encontrar todos los objetos que tengan el mismo nombre
 
 	return (
 		<div className='cart'>
@@ -21,6 +34,7 @@ const Cart = () => {
 							<table>
 								<thead>
 									<tr>
+										<th>Cantidad</th>
 										<th>Productos</th>
 										<th>Precio</th>
 										<th>Eliminar</th>
@@ -30,6 +44,7 @@ const Cart = () => {
 									{cart.map((item) => {
 											return (
 											<tr>
+												<td>{cantItem(item)}</td>
 												<td className='column-1'>
 													<div className='table-product'>
 														<img src={item.imagen} />
@@ -38,20 +53,20 @@ const Cart = () => {
 												</td>
 												<td>${item.precio}</td>
 												<td>
-													<button className='btn-eliminar'>X</button>
+													<button className='btn-eliminar' onClick={()=> removeCartItem(item.nombre)}>X</button>
 												</td>
 											</tr>
 											) 
 									})}
 								</tbody>
 							</table>
-							<tfoot>
+							<div>
 								<h3>Total: $ {precioTotal}</h3>
 								<button>Comprar</button>
-							</tfoot>
+							</div>
 						</>
 					: 
-						<h3>Incorpore productos a su compra</h3>
+						<h3>No hay artículos en su canasta. Para ver nuestros productos disponibles diríjase a <Link to='/productos' style={{ fontWeight: 'bold', color: '#A98754' }}>aquí</Link>.</h3>
 				}
 			</>
 		</div>

@@ -1,5 +1,6 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar.jsx'
+import Footer from './components/Footer/Footer'
 import Inicio from './pages/Inicio/Inicio.jsx'
 import Nosotros from './pages/Nosotros/Nosotros.jsx'
 import Productos from './pages/Productos/Productos.jsx'
@@ -33,7 +34,7 @@ function App() {
           <NavBar />
           <div className='body'>
             <Routes>
-              <Route path='/' element={<Inicio greeting={"Bienvenidos al Caldero Humeante"}/>} />
+              <Route path='/' element={<Inicio />} />
               <Route path='/nosotros' element={<Nosotros />} />
               <Route path='/productos' element={<Productos />} />
               <Route path='/productos/:categoria' element={<Productos />} />
@@ -43,6 +44,7 @@ function App() {
               <Route path='*' element={<Navigate to='/' />} />
             </Routes>
           </div>
+          {/* <Footer /> */}
       </div>
     </CartProvider>
   )

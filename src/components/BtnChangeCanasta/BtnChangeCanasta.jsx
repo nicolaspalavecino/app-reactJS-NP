@@ -6,22 +6,21 @@ const BtnChangeCanasta = ({ nombre, precio, imagen }) => {
     const [cart, setCart] = useContext(CartContext)
     const product = { nombre: nombre, precio: precio, imagen: imagen }
     
-    const addCart = () => {
+    const addCartItem = () => {
         setCart(curr => [...curr, product])
     }
-    const quantity = 0
 
     return (
         <div className='add-container'>
-        {quantity === 0 ? (
-            <button className='btn-add-product' onClick={addCart}>
+        {(cart.filter((x) => x.nombre == nombre)).length == 0 ? (
+            <button className='btn-add-product' onClick={addCartItem}>
                 <p>+ CANASTA</p>
             </button>
         ) : 
             <div className='add-variant'>
                 <div className='add-quantity'>
-                    <button onClick={addCart}>+</button>
-                    <p><span>{quantity}</span> en Canasta</p>
+                    <button onClick={addCartItem}>+</button>
+                    <p><span>{(cart.filter((x) => x.nombre == nombre)).length}</span> en Canasta</p>
                     <button>-</button>
                 </div>
                 <button className='remove' onClick={()=> removeCartItem(id)}>Eliminar</button>

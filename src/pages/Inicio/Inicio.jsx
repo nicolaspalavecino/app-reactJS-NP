@@ -1,10 +1,11 @@
-import './Inicio.css';
+import './Inicio.css'
+import Carousel from '../../components/Carousel/Carousel'
 
-const Inicio = ({ greeting }) => {
+const Inicio = () => {
     return(
         <>
             <div className='inicio'>
-                <h2>{greeting}</h2>
+                <Carousel />
             </div>
         </>
     )

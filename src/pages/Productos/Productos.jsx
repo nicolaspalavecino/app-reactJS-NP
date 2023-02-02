@@ -14,7 +14,7 @@ const Productos = () => {
 
     const getItems = async () => {
         const querySnapshot = await getDocs(itemCollectionRef)
-        const docs = querySnapshot.docs.map((doc) => doc.data())
+        const docs = querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
         setItem(docs)
     }
 
@@ -50,10 +50,10 @@ const Productos = () => {
                         menuItems={menuItems}
                     />
                     <div className='productos-container'>
-                        {item.map((item, index) => {
+                        {item.map((item) => {
                             return (
                                 <ProductCard 
-                                key={index}
+                                key={item.id}
                                 nombre={item.nombre}
                                 categoria={item.categoria}
                                 precio={item.precio}

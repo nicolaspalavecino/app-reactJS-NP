@@ -14,6 +14,7 @@ const ProductCard = ({ id, nombre, categoria, precio, imagen }) => {
             </div>
             <h4 className='card-precio'>$ {precio}</h4>
             <BtnChangeCanasta 
+                id={id}
                 nombre={nombre}
                 precio={precio}
                 imagen={imagen}
