@@ -1,6 +1,5 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar.jsx'
-import Footer from './components/Footer/Footer'
 import Inicio from './pages/Inicio/Inicio.jsx'
 import Nosotros from './pages/Nosotros/Nosotros.jsx'
 import Productos from './pages/Productos/Productos.jsx'
@@ -44,7 +43,6 @@ function App() {
               <Route path='*' element={<Navigate to='/' />} />
             </Routes>
           </div>
-          {/* <Footer /> */}
       </div>
     </CartProvider>
   )

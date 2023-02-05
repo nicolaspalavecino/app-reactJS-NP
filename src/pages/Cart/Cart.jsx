@@ -19,9 +19,9 @@ const Cart = () => {
 		return cantidad
 	}
 
-	// Utilizar una función para recorrer cart e iterar para encontrar todos los objetos que tengan el mismo nombre
+	// Utilizar una función para recorrer cart e iterar para encontrar todos los objetos que tengan el mismo nombre ???
 
-	return (
+	return ( 
 		<div className='cart'>
 			<div className='cart-sup'>
 				<img src={cart.length > 0 ? LogoCanastaFull : LogoCanasta} />

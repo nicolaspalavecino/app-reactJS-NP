@@ -2,9 +2,9 @@ import './BtnChangeCanasta.css'
 import { CartContext } from '../../context/CartContext'
 import { useContext } from 'react'
 
-const BtnChangeCanasta = ({ nombre, precio, imagen }) => {
+const BtnChangeCanasta = ({ nombre, precio, imagen, id }) => {
     const [cart, setCart] = useContext(CartContext)
-    const product = { nombre: nombre, precio: precio, imagen: imagen }
+    const product = { nombre: nombre, precio: precio, imagen: imagen, id: id }
     
     const addCartItem = () => {
         setCart(curr => [...curr, product])
