@@ -53,6 +53,7 @@ const Productos = () => {
                         {item.map((item) => {
                             return (
                                 <ProductCard 
+                                id={item.id}
                                 key={item.id}
                                 nombre={item.nombre}
                                 categoria={item.categoria}

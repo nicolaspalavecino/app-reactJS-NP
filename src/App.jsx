@@ -19,10 +19,10 @@ function App() {
   const itemCollectionRef = collection(db, "items")
 
   const getItems = async () => {
-      const querySnapshot = await getDocs(itemCollectionRef)
-      const docs = querySnapshot.docs.map((doc) => doc.data())
-      setItem(docs)
-  }
+    const querySnapshot = await getDocs(itemCollectionRef)
+    const docs = querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+    setItem(docs)
+}
 
   useEffect(() => {
       getItems()

@@ -12,6 +12,19 @@ const CartWidget = () => {
     const [cart, setCart] = useContext(CartContext)
     const precioTotal = cart.reduce((acc, curr) => acc + curr.precio, 0)
 
+    const quantity = cart.reduce((acc, curr) => {
+      return acc + curr.quantity
+    }, 0)
+
+    const totalPrice = cart.reduce((acc, curr) => {
+      return acc + curr.quantity * curr.precio
+    }, 0)
+
+    const removeCartItem = (id) => {
+      const curr = cart.filter((item) => item.id !== id)
+      setCart(curr)
+    }
+
     const TablaCarrito = () => {
       if (cart.length > 0) {
         return (
@@ -21,7 +34,7 @@ const CartWidget = () => {
                 <tr>
                   <th>Productos</th>
                   <th>Precio</th>
-                  <th>Eliminar</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -31,19 +44,20 @@ const CartWidget = () => {
                       <td className='column-1'>
                         <div className='table-product'>
                           <img src={item.imagen} />
-                          {item.nombre}
+                          <p>{item.nombre} ({item.quantity})</p>
                         </div>
                       </td>
-                      <td>${item.precio}</td>
+                      <td>${item.precio * item.quantity}</td>
                       <td>
-                        <button className='btn-eliminar'>X</button>
+                        <button className='btn-eliminar' onClick={() => removeCartItem
+                        (item.id)}>X</button>
                       </td>
                     </tr>
                   ) 
                 })}
               </tbody>
             </table>
-              <h3>Total: $ {precioTotal}</h3>
+              <h3>Total: ${totalPrice}</h3>
           </div>
         )
     } else {
@@ -60,7 +74,7 @@ const CartWidget = () => {
         <Tooltip hasArrow label='Canasta de Compras' bg='#634f31'>
           <Button onClick={onOpen} className='btn-canasta'>
               <img src={cart.length > 0 ? LogoCanastaFull : LogoCanasta} />
-              <span className='item-cart-count'>{cart.length}</span>
+              <span className='item-cart-count'>{quantity}</span>
           </Button>
         </Tooltip>
         <Modal isOpen={isOpen} onClose={onClose}>

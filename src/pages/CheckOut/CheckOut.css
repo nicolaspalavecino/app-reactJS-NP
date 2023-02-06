@@ -19,13 +19,25 @@
     object-fit: contain;
 }
 
+.purchase-form {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    padding-bottom: 5%;
+}
+
 .checkout-form {
     border-top: #ab8854 1px solid;
     padding: 20px 0 10% 0;
+    width: 60%;
 }
 
 .chakra-input.css-1kp110w, .chakra-input__group.css-4302v8 {
     margin-bottom: 15px;
+}
+
+.products-list {
+    width: 40%;
 }
 
 @media (max-width: 480px) {
@@ -43,5 +55,19 @@
 
     .chakra-radio__label.css-14iyyou {
         font-size: small;
+    }
+}
+
+@media (max-width: 768px) {
+    .purchase-form {
+        flex-direction: column;
+    }
+
+    .checkout-form {
+        width: 100%;
+    }
+
+    .products-list {
+        width: 100%;
     }
 }

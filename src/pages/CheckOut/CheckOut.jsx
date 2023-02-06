@@ -5,11 +5,12 @@ import Return from '../../img/Return.png'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
+import CartItemsList from '../../components/CartItemsList/CartItemsList'
 
 const CheckOut = () => {
 	const [cart, setCart] = useContext(CartContext)
 
-  return (
+	return (
 		<>
 			{cart.length > 0
 			?
@@ -27,35 +28,38 @@ const CheckOut = () => {
 								<img src={Return}/>
 							</Link>
         		</Tooltip>
-					</div>	
-					<section className='checkout-form'>
-						<FormControl>
-							<FormLabel>Nombre/s:</FormLabel>
-							<Input type='name' placeholder='Ingrese su nombre'/>
-							<FormLabel>Apellido/s:</FormLabel>
-							<Input type='last-name' placeholder='Ingrese su apellido'/>
-							<FormLabel>Fecha de nacimiento:</FormLabel>
-							<Input type='date'/>
-							<FormLabel>Teléfono:</FormLabel>
-							<InputGroup>
-								<InputLeftAddon children='+54' />
-								<Input type='tel' placeholder='Ingrese un número de teléfono'/>
-							</InputGroup>
-							<FormLabel>Domicilio:</FormLabel>
-							<Input type='adress' placeholder='Ingrese la dirección del envío'/>
-							<FormLabel>	CP:</FormLabel>
-							<Input type='code' placeholder='Ingrese el código postal'/>
-							<FormLabel>Correo electrónico:</FormLabel>
-							<Input type='email' placeholder='Ingrese su dirección de email'/>
-							<FormLabel>Método de pago:</FormLabel>
-							<RadioGroup defaultValue='1'>
-								<Stack spacing={5} direction='row'>
-									<Radio value='1'>Tarjeta de Crédito</Radio>
-									<Radio value='2'>Tarjeta de Débito</Radio>
-									<Radio value='3'>Mercado Pago</Radio>
-								</Stack>
-							</RadioGroup>
-						</FormControl>
+					</div>
+					<section className='purchase-form'>
+						<div className='checkout-form'>
+							<FormControl>
+								<FormLabel>Nombre/s:</FormLabel>
+								<Input type='name' placeholder='Ingrese su nombre'/>
+								<FormLabel>Apellido/s:</FormLabel>
+								<Input type='last-name' placeholder='Ingrese su apellido'/>
+								<FormLabel>Fecha de nacimiento:</FormLabel>
+								<Input type='date'/>
+								<FormLabel>Teléfono:</FormLabel>
+								<InputGroup>
+									<InputLeftAddon children='+54' />
+									<Input type='tel' placeholder='Ingrese un número de teléfono'/>
+								</InputGroup>
+								<FormLabel>Domicilio:</FormLabel>
+								<Input type='adress' placeholder='Ingrese la dirección del envío'/>
+								<FormLabel>	CP:</FormLabel>
+								<Input type='code' placeholder='Ingrese el código postal'/>
+								<FormLabel>Correo electrónico:</FormLabel>
+								<Input type='email' placeholder='Ingrese su dirección de email'/>
+								<FormLabel>Método de pago:</FormLabel>
+								<RadioGroup defaultValue='1'>
+									<Stack spacing={5} direction='row'>
+										<Radio value='1'>Tarjeta de Crédito</Radio>
+										<Radio value='2'>Tarjeta de Débito</Radio>
+										<Radio value='3'>Mercado Pago</Radio>
+									</Stack>
+								</RadioGroup>
+							</FormControl>
+						</div>
+						<CartItemsList />
 					</section>
 				</div>
 			:

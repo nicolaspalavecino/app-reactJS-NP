@@ -3,25 +3,17 @@ import LogoCanasta from '../../img/LogoCanasta.png'
 import LogoCanastaFull from '../../img/LogoCanastaFull.png'
 import Comprar from '../../img/Comprar.png'
 import { CartContext } from '../../context/CartContext'
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Tooltip } from '@chakra-ui/react'
+import HandleCartItem from '../../components/HandleCartItem/HandleCartItem'
 
 const Cart = () => {
   const [cart, setCart] = useContext(CartContext)
-  const precioTotal = cart.reduce((acc, curr) => acc + curr.precio, 0)
 
-	const removeCartItem = (nombre) => {
-		const arr = cart.filter((i) => i.nombre !== nombre)
-		setCart(arr)
-	}
-
-	const cantItem = (item) => {
-		const cantidad = (cart.filter((x) => x.nombre == item.nombre)).length
-		return cantidad
-	}
-
-	// Utilizar una función para recorrer cart e iterar para encontrar todos los objetos que tengan el mismo nombre ???
+	const totalPrice = cart.reduce((acc, curr) => {
+		return acc + curr.quantity * curr.precio
+	}, 0)
 
 	return ( 
 		<div className='cart'>
@@ -36,39 +28,44 @@ const Cart = () => {
 							<table>
 								<thead>
 									<tr>
-										<th>Cantidad</th>
 										<th>Productos</th>
+										<th>Cantidad</th>
 										<th>Precio</th>
-										<th>Eliminar</th>
 									</tr>
 								</thead>
 								<tbody>
-									{cart.map((item) => {
+									{cart.map((cartItem) => {
 											return (
 											<tr>
-												<td>{cantItem(item)}</td>
+												{/* <td>{cantItem(cartItem)}</td> */}
 												<td className='column-1'>
 													<div className='table-product'>
-														<img src={item.imagen} />
-														{item.nombre}
+														<img src={cartItem.imagen} />
+														{cartItem.nombre}
 													</div>
 												</td>
-												<td>${item.precio}</td>
 												<td>
-													<button className='btn-eliminar' onClick={()=> removeCartItem(item.nombre)}>X</button>
+													<HandleCartItem
+														key={cartItem.id}
+														id={cartItem.id}
+														nombre={cartItem.nombre}
+														precio={cartItem.precio}
+														imagen={cartItem.imagen}
+													/>
 												</td>
+												<td>${cartItem.precio * cartItem.quantity}</td>
 											</tr>
 											) 
 									})}
 								</tbody>
 							</table>
-							<h3>Total: $ {precioTotal}</h3>
+							<h3>Total: $ {totalPrice}</h3>
 							<div className='comprar-container'>
 								<Tooltip hasArrow label='COMPRAR' bg='#634f31'>
 									<Link to={'/checkout'} className='return btn-comprar'>
 										<img src={Comprar} />
 									</Link>
-        				</Tooltip>
+        						</Tooltip>
 							</div>
 						</>
 					: 

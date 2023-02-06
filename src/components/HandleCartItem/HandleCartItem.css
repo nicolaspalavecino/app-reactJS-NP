@@ -43,14 +43,13 @@
     font-weight: bolder;
 }
 
-.add-quantity span {
-    color: white;
-    font-weight: bold;
-}
 
 .add-quantity p {
-    color: #f1c480;
+    color: white;
     font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 0.3rem;
+    padding: 0 10px;
 }
 
 .remove {
