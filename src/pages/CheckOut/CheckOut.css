@@ -1,0 +1,47 @@
+.checkout-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.cart-sup h3 {
+    padding: 0 0 0 15px;
+}
+
+.return {
+    display: flex;
+    height: 80px;
+}
+
+.return img {
+    object-fit: contain;
+}
+
+.checkout-form {
+    border-top: #ab8854 1px solid;
+    padding: 20px 0 10% 0;
+}
+
+.chakra-input.css-1kp110w, .chakra-input__group.css-4302v8 {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+    .checkout-header .cart-sup img {
+        height: 60px;
+    }
+    
+    .checkout-title h2 {
+        font-size: medium;
+    }
+
+    .checkout-title h3 {
+        font-size: small;
+    }
+
+    .chakra-radio__label.css-14iyyou {
+        font-size: small;
+    }
+}

@@ -1,9 +1,11 @@
 import './Cart.css'
 import LogoCanasta from '../../img/LogoCanasta.png'
 import LogoCanastaFull from '../../img/LogoCanastaFull.png'
+import Comprar from '../../img/Comprar.png'
 import { CartContext } from '../../context/CartContext'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { Tooltip } from '@chakra-ui/react'
 
 const Cart = () => {
   const [cart, setCart] = useContext(CartContext)
@@ -60,9 +62,13 @@ const Cart = () => {
 									})}
 								</tbody>
 							</table>
-							<div>
-								<h3>Total: $ {precioTotal}</h3>
-								<button>Comprar</button>
+							<h3>Total: $ {precioTotal}</h3>
+							<div className='comprar-container'>
+								<Tooltip hasArrow label='COMPRAR' bg='#634f31'>
+									<Link to={'/checkout'} className='return btn-comprar'>
+										<img src={Comprar} />
+									</Link>
+        				</Tooltip>
 							</div>
 						</>
 					: 

@@ -6,6 +6,7 @@ import Productos from './pages/Productos/Productos.jsx'
 import ProductDetail from './components/ProductDetail/ProductDetail.jsx'
 import Contacto from './pages/Contacto/Contacto.jsx'
 import Cart from './pages/Cart/Cart'
+import CheckOut from './pages/CheckOut/CheckOut'
 import { Route, Routes, Navigate } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
 import { useEffect, useState } from 'react'
@@ -40,6 +41,7 @@ function App() {
               <Route path='/productos/:categoria/:nombre' element={<ProductDetail data={item} />} />
               <Route path='/contacto' element={<Contacto />} />
               <Route path='/canasta' element={<Cart />} />
+              <Route path='/checkout' element={<CheckOut />}/>
               <Route path='*' element={<Navigate to='/' />} />
             </Routes>
           </div>

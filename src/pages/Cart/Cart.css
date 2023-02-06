@@ -41,3 +41,22 @@ tfoot {
     width: 35px;
     border-radius: 0.5em;
 }
+
+.comprar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.return.btn-comprar {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    border: #ab8854 3px dotted;
+    border-radius: 50%;
+}
+
+.btn-comprar img {
+    object-fit: contain;
+}
