@@ -60,7 +60,7 @@
 
 @media (max-width: 768px) {
     .purchase-form {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .checkout-form {

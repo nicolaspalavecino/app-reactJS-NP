@@ -5,7 +5,11 @@
 
 .cart-items-list {
     border: 2px rgba(0, 0, 0, 0.486) dashed;
-    padding: 2%;
+    padding: 2% 5%;
     margin: 2% 0;
+}
+
+.cart-items-list li {
+    margin-left: 6%;
 }
 

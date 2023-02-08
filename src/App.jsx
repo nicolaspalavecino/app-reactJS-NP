@@ -16,7 +16,7 @@ import { collection, getDocs, orderBy, query } from 'firebase/firestore'
 function App() {
 
   const [item, setItem] = useState([])
-  const itemCollectionRef = collection(db, "items")
+  const itemCollectionRef = query(collection(db, "items"), orderBy("nombre"))
 
   const getItems = async () => {
     const querySnapshot = await getDocs(itemCollectionRef)
@@ -36,8 +36,8 @@ function App() {
             <Routes>
               <Route path='/' element={<Inicio />} />
               <Route path='/nosotros' element={<Nosotros />} />
-              <Route path='/productos' element={<Productos />} />
-              <Route path='/productos/:categoria' element={<Productos />} />
+              <Route path='/productos' element={<Productos item={item} setItem={setItem} getItems={getItems} />} />
+              <Route path='/productos/:categoria' element={<Productos item={item} setItem={setItem} getItems={getItems} />} />
               <Route path='/productos/:categoria/:nombre' element={<ProductDetail data={item} />} />
               <Route path='/contacto' element={<Contacto />} />
               <Route path='/canasta' element={<Cart />} />

@@ -15,15 +15,15 @@ const CartItemsList = () => {
             <div className='cart-items-list'>
             {cart.map((cartItem) => {
                 return (
-                    <>
-                        <span>
-                            - {cartItem.quantity} x {cartItem.nombre}
-                        </span>
-                    </>
+                    <ul>
+                        <li>
+                            {cartItem.quantity} x {cartItem.nombre}
+                        </li>
+                    </ul>
                 ) 
             })}
             </div>
-            <span style={{ fontWeight: 'bold'}}>Total a Pagar: ${totalPrice}</span>
+            <span style={{ fontWeight: 'bold'}}>TOTAL a pagar: ${totalPrice}</span>
         </div>
     )
 }
