@@ -16,7 +16,7 @@ const CartItemsList = () => {
             {cart.map((cartItem) => {
                 return (
                     <ul>
-                        <li>
+                        <li key={cartItem.id}>
                             {cartItem.quantity} x {cartItem.nombre}
                         </li>
                     </ul>

@@ -40,7 +40,7 @@ const CartWidget = () => {
               <tbody>
                 {cart.map((item) => {
                   return (
-                    <tr className='row-cart-widget'>
+                    <tr className='row-cart-widget' key={item.id}>
                       <td className='column-1'>
                         <div className='table-product'>
                           <img src={item.imagen} />

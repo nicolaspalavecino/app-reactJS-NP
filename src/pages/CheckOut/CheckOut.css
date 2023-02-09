@@ -40,6 +40,66 @@
     width: 40%;
 }
 
+#swal2-title.swal2-title {
+    color:#e2c394;
+    margin: 15px 0 0;
+    padding: 0 0 10px;
+}
+
+div#swal2-html-container.swal2-html-container {
+    padding: 20px;
+}
+
+#swal2-html-container.swal2-html-container ul {
+    text-align: start;
+    padding-left: 5%;
+}
+
+#swal2-html-container.swal2-html-container span {
+    color: #e2c394;
+}
+
+.swal2-popup.swal2-modal.swal2-show {
+    background-color: #270e22;
+}
+
+#swal2-html-container.swal2-html-container {
+    color: #cca66c;
+    font-size: larger;
+    margin: 0;
+    padding: 10px;
+    border-top: #cca66c 2px solid;
+}
+
+button.swal2-confirm.swal2-styled, button.swal2-cancel.swal2-styled {
+    background-color: #ab8854;
+    font-weight: bold;
+    color: #270e22;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.buy-end {
+    background-color: #ab8854;
+    color:#270e22;
+    font-family: 'Rye';
+    margin-top: 5%;
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+
+button.swal2-confirm.swal2-styled:hover, button.swal2-cancel.swal2-styled:hover, .buy-end:hover {
+    background-color: #866b42;
+    color: white;
+}
+{
+    background-color: #866b42;
+    color: white;
+}
+
+
 @media (max-width: 480px) {
     .checkout-header .cart-sup img {
         height: 60px;

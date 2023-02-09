@@ -2,12 +2,15 @@ import './CheckOut.css'
 import { FormLabel,  Input, RadioGroup, Radio, Stack, InputLeftAddon, InputGroup, Tooltip } from '@chakra-ui/react'
 import PackageLogo from '../../img/Package.png'
 import Return from '../../img/Return.png'
+import LogoCheck from '../../img/LogoCheck.gif'
+import LogoCruz from '../../img/LogoCruz.gif'
 import { Link } from 'react-router-dom'
 import { useContext, useState } from 'react'
 import { CartContext } from '../../context/CartContext'
 import CartItemsList from '../../components/CartItemsList/CartItemsList'
 import { addDoc, collection, getDocs } from 'firebase/firestore'
 import { db } from '../../../db/firebase-config'
+import Swal from 'sweetalert2'
 
 const CheckOut = () => {
 	const [cart, setCart] = useContext(CartContext)
@@ -21,6 +24,7 @@ const CheckOut = () => {
 	const [inputPay, setInputPay] = useState('')
 
 	const createOrder = async (e) => {
+		e.preventDefault()
 		if ( 
 				inputName === '' ||
 				inputPhone === '' || 
@@ -31,33 +35,65 @@ const CheckOut = () => {
 				inputEmail === '' ||
 				inputPay === ''
 			) {
-			e.preventDefault()
-			alert('Complete los datos del formulario')
+				Swal.fire({
+					imageUrl: `${LogoCruz}`,
+					imageHeight: 200,
+					imageWidth: 200,
+					text: 'Por favor, complete todos los campos del formulario.',
+					showConfirmButton: true,
+				})
 		} else {
-			e.preventDefault()
 			const order = {
 				cart: cart,
 				name: inputName,
 				lastName: inputLastName,
-				number: inputPhone,
+				phone: inputPhone,
 				identity: inputIdentity,
 				adress: inputAdress,
 				CP: inputPostalCode,
 				email: inputEmail,
-				payment: inputPay
+				payment: inputPay,
 			}
-			const ordersCollectionRef = collection(db, "orders")
-			await addDoc(ordersCollectionRef, order)
-			const data = await getDocs(ordersCollectionRef)
-			// setOrders(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-			setInputName('')
-			setInputLastName('')
-			setInputPhone('')
-			setInputIdentity('')
-			setInputAdress('')
-			setInputPostalCode('')
-			setInputEmail('')
-			setInputPay('')
+			const ordersCollectionRef = collection(db, 'orders')
+			const myOrder = await addDoc(ordersCollectionRef, order)
+			Swal.fire({
+				title: 'Verifique sus datos:',
+				html:
+					'<ul>' + 
+						'<li>Nombre y Apellido: ' + '<span>' + `${order.name}` + ' ' + `${order.lastName}` + '</span>' + '</li>' +
+						'<li>DNI: ' + '<span>' + `${order.identity}` + '</span>' + '</li>' + 
+						'<li>Dirección: ' + '<span>' + `${order.adress}` + '</span>' + ' | CP: ' + '<span>' + `${order.CP}` + '</span>' + '</li>' + 
+						'<li>Teléfono: ' + '<span>' + `${order.phone}` + '</span>' + '</li>' + 
+						'<li>Email: ' + '<span>' + `${order.email}` + '</span>' + '</li>' +
+					'</ul>',
+				showConfirmButton: true,
+				showCancelButton: true,
+				cancelButtonText: 'X'
+			}).then((result) => {
+				if(result.isConfirmed) {
+					Swal.fire({
+						imageUrl: `${LogoCheck}`,
+						imageHeight: 200,
+						imageWidth: 200,
+						title: 'Su código de orden es: ' + `${myOrder.id}`,
+						html: 
+							'<p>¡Muchas gracias por comprar en nuestra tienda! Estamos preparando tu pedido.</p>' +
+							'<p>La información para el seguimiento ha sido enviada a su correo: </p>'+ `${order.email}`,
+						showConfirmButton: false,
+					})
+					setInputName('')
+					setInputLastName('')
+					setInputPhone('')
+					setInputIdentity('')
+					setInputAdress('')
+					setInputPostalCode('')
+					setInputEmail('')
+					setInputPay('')
+					setTimeout(()=> {
+						location.reload()
+					},7000)
+				}
+			})
 		}
 	}
 
@@ -136,7 +172,7 @@ const CheckOut = () => {
 										<Radio value='MP' onChange={(e) => setInputPay(e.target.value)}>Mercado Pago</Radio>
 									</Stack>
 								</RadioGroup>
-								<button type='submit'>COMPRAR</button>
+								<button type='submit' className='buy-end'>COMPRAR</button>
 							</form>
 						</div>
 						<CartItemsList />

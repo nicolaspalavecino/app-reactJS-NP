@@ -36,8 +36,7 @@ const Cart = () => {
 								<tbody>
 									{cart.map((cartItem) => {
 											return (
-											<tr>
-												{/* <td>{cantItem(cartItem)}</td> */}
+											<tr key={cartItem.id}>
 												<td className='column-1'>
 													<div className='table-product'>
 														<img src={cartItem.imagen} />
