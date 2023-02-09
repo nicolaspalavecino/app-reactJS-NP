@@ -84,8 +84,8 @@ const CheckOut = () => {
 							'<p>La información para el seguimiento ha sido enviada a su correo: </p>'+ `${order.email}`,
 						showConfirmButton: false,
 					}).then(() => {
+						setCart([])
 						navigate('/')
-						location.reload()
 					})
 				}
 			})
