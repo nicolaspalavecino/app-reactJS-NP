@@ -1,7 +1,62 @@
-.contacto {
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(15,11,8,1) 13%, rgba(45,17,36,1) 24%, rgba(47,42,91,1) 50%, rgba(50,49,96,1) 64%, rgba(88,59,92,1) 80%, rgba(122,63,89,1) 91%);
+.contact-page {
     width: 100%;
-    height: 80vh;
     z-index: -2;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(15,11,8,1) 13%, rgba(45,17,36,1) 24%, rgba(47,42,91,1) 50%, rgba(50,49,96,1) 64%, rgba(88,59,92,1) 80%, rgba(122,63,89,1) 91%);
+    padding: 6vw 3vw 3vw;
+    gap: 1vw;
+}
+
+.shop-picture {
+    background-color: rgba(0, 0, 0, 0.527);
+    padding: 2%;
+    border: 3px solid #ab8854;
+    display: flex;
+    justify-content: center;
+}
+
+.shop-picture img {
+    border: 1px solid #ab8854;
+}
+
+.contact {
+    background-color: #ab8854b9;
+    padding: 5%;
+}
+
+.contact h2 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: x-large;
+}
+
+.contact-content {
+    border-top: white solid 2px;
+    border-bottom: white solid 2px;
+    margin-top: 2%;
+    padding: 5%;
+}
+
+.contact-content li, .contact-content p {
+    color: whitesmoke;
+    margin-bottom: 1vw;
+}
+
+.contact-content span {
+    color: white;
+    font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+    .contact-page {
+        flex-direction: row;
+        padding-bottom: 10vw;
+    }
+    
+    .shop-picture, .contact {
+        width: 50%;
+    }
 }

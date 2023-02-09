@@ -82,15 +82,10 @@ const CheckOut = () => {
 						html: 
 							'<p>¡Muchas gracias por comprar en nuestra tienda! Estamos preparando tu pedido.</p>' +
 							'<p>La información para el seguimiento ha sido enviada a su correo: </p>'+ `${order.email}`,
-						// showConfirmButton: true,
-					}).then((result) => {
-						if(result.isConfirmed) {
-							navigate('/')
-							location.reload()
-						} else {
-							navigate('/')
-							location.reload()
-						}
+						showConfirmButton: false,
+					}).then(() => {
+						navigate('/')
+						location.reload()
 					})
 				}
 			})
