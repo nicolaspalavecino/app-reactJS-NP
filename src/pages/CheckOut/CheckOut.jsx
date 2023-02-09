@@ -10,6 +10,7 @@ import { CartContext } from '../../context/CartContext'
 import CartItemsList from '../../components/CartItemsList/CartItemsList'
 import { addDoc, collection, getDocs } from 'firebase/firestore'
 import { db } from '../../../db/firebase-config'
+import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
 const CheckOut = () => {
@@ -22,6 +23,8 @@ const CheckOut = () => {
 	const [inputPostalCode, setInputPostalCode] = useState('')
 	const [inputEmail, setInputEmail] = useState('')
 	const [inputPay, setInputPay] = useState('')
+
+	let navigate = useNavigate()
 
 	const createOrder = async (e) => {
 		e.preventDefault()
@@ -79,19 +82,16 @@ const CheckOut = () => {
 						html: 
 							'<p>¡Muchas gracias por comprar en nuestra tienda! Estamos preparando tu pedido.</p>' +
 							'<p>La información para el seguimiento ha sido enviada a su correo: </p>'+ `${order.email}`,
-						showConfirmButton: false,
+						// showConfirmButton: true,
+					}).then((result) => {
+						if(result.isConfirmed) {
+							navigate('/')
+							location.reload()
+						} else {
+							navigate('/')
+							location.reload()
+						}
 					})
-					setInputName('')
-					setInputLastName('')
-					setInputPhone('')
-					setInputIdentity('')
-					setInputAdress('')
-					setInputPostalCode('')
-					setInputEmail('')
-					setInputPay('')
-					setTimeout(()=> {
-						location.reload()
-					},7000)
 				}
 			})
 		}
@@ -192,3 +192,12 @@ export default CheckOut
 // -	Swal.fire para modificar alerta ('completar todos los campos')
 // -	Swal.fire para confirmación de compra y tratar de traer data+id para mostrar al usuario
 // -	Tratar de recargar la página post confirmación y dirigirlo al main con carrito vacío
+
+// setInputName('')
+// setInputLastName('')
+// setInputPhone('')
+// setInputIdentity('')
+// setInputAdress('')
+// setInputPostalCode('')
+// setInputEmail('')
+// setInputPay('')
