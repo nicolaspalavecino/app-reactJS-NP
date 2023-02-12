@@ -2,7 +2,7 @@ import './HandleCartItem.css'
 import { CartContext } from '../../context/CartContext'
 import { useContext } from 'react'
 
-const HandleCartItem = ({ nombre, precio, imagen, id, span }) => {
+const HandleCartItem = ({ nombre, precio, imagen, id }) => {
     const [cart, setCart] = useContext(CartContext)
     const product = { nombre: nombre, precio: precio, imagen: imagen, id: id }
     

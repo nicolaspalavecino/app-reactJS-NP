@@ -15,6 +15,7 @@ const WizardCard = ({ id, nombre, subtitle, descript, imagen})=> {
 				</div>
 				<div className='btn-saber-container'>
 					<SaberMas
+						key={nombre}
 						name={nombre}
 						photo={imagen}
 						position={subtitle}

@@ -32,7 +32,7 @@
     width: 60%;
 }
 
-.chakra-input.css-1kp110w, .chakra-input__group.css-4302v8 {
+.chakra-form-control.css-1kxonj9 {
     margin-bottom: 15px;
 }
 
@@ -94,11 +94,10 @@ button.swal2-confirm.swal2-styled:hover, button.swal2-cancel.swal2-styled:hover,
     background-color: #866b42;
     color: white;
 }
-{
-    background-color: #866b42;
-    color: white;
-}
 
+.buy-end:active {
+    scale: 0.9;
+}
 
 @media (max-width: 480px) {
     .checkout-header .cart-sup img {

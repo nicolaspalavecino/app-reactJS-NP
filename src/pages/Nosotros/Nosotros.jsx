@@ -44,6 +44,7 @@ const Nosotros = () => {
 						{wizard.map((wizard, index) => {
 							return (
 								<WizardCard 
+									key={wizard.nombre}
 									id={index}
 									nombre={wizard.nombre}
 									subtitle={wizard.subtitle}

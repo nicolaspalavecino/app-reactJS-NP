@@ -3,24 +3,8 @@ import ProductCard from '../../components/ProductCard/ProductCard'
 import Prod1Banner from '../../img/Prod1-logo.png'
 import Prod2Banner from '../../img/Prod2-logo.png'
 import FiltroProductos from '../../components/FiltroProductos/FiltroProductos'
-// import { useEffect, useState } from 'react'
-// import { db } from '../../../db/firebase-config'
-// import { collection, getDocs, orderBy, query } from 'firebase/firestore'
 
 const Productos = ( {item, setItem, getItems} ) => {
-
-    // const [item, setItem] = useState([])
-    // const itemCollectionRef = query(collection(db, "items"), orderBy("nombre"))
-
-    // const getItems = async () => {
-    //     const querySnapshot = await getDocs(itemCollectionRef)
-    //     const docs = querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
-    //     setItem(docs)
-    // }
-
-    // useEffect(() => {
-    //     getItems()
-    // }, [])
 
     const menuItems = [...new Set(item.map((val) => val.categoria))]
 

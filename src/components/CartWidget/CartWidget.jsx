@@ -57,7 +57,7 @@ const CartWidget = () => {
                 })}
               </tbody>
             </table>
-              <h3>Total: ${totalPrice}</h3>
+              <h3 className='total-price'>Total: ${totalPrice}</h3>
           </div>
         )
     } else {

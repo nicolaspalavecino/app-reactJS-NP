@@ -31,7 +31,7 @@ const Inicio = () => {
 								<img src={BookHeader} />
 							</div>
 							<div>
-								<h2>PROXIMAMENTE</h2>
+								<h2>PRÓXIMAMENTE</h2>
 								<p>LIBROS de pociones disponibles en nuestra TIENDA</p>
 							</div>
 						</div>

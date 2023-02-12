@@ -1,5 +1,5 @@
 import './CheckOut.css'
-import { FormLabel,  Input, RadioGroup, Radio, Stack, InputLeftAddon, InputGroup, Tooltip } from '@chakra-ui/react'
+import { FormLabel,  Input, RadioGroup, Radio, Stack, InputLeftAddon, InputGroup, Tooltip, FormControl, FormHelperText, FormErrorMessage } from '@chakra-ui/react'
 import PackageLogo from '../../img/Package.png'
 import Return from '../../img/Return.png'
 import LogoCheck from '../../img/LogoCheck.gif'
@@ -22,22 +22,16 @@ const CheckOut = () => {
 	const [inputAdress, setInputAdress] = useState('')
 	const [inputPostalCode, setInputPostalCode] = useState('')
 	const [inputEmail, setInputEmail] = useState('')
+	const [iEmailConfirm, setIEmailConfirm] = useState('')
 	const [inputPay, setInputPay] = useState('')
+
+	const emailCorrect = inputEmail === iEmailConfirm && iEmailConfirm !== ''
 
 	let navigate = useNavigate()
 
 	const createOrder = async (e) => {
 		e.preventDefault()
-		if ( 
-				inputName === '' ||
-				inputPhone === '' || 
-				inputLastName === '' ||
-				inputIdentity === '' ||
-				inputAdress === '' ||
-				inputPostalCode === '' ||
-				inputEmail === '' ||
-				inputPay === ''
-			) {
+		if (inputPay === '' || emailCorrect === false) {
 				Swal.fire({
 					imageUrl: `${LogoCruz}`,
 					imageHeight: 200,
@@ -114,59 +108,95 @@ const CheckOut = () => {
 					<section className='purchase-form'>
 						<div className='checkout-form'>
 							<form onSubmit={createOrder}>
-								<FormLabel>Nombre/s:</FormLabel>
-								<Input 
-									type='name' 
-									placeholder='Ingrese su nombre/s'
-									value={inputName}
-									onChange={(e) => setInputName(e.target.value)}/>
-								<FormLabel>Apellido/s:</FormLabel>
-								<Input 
-									type='last-name' 
-									placeholder='Ingrese su apellido/s'
-									value={inputLastName}
-									onChange={(e) => setInputLastName(e.target.value)}/>
-								<FormLabel>Documento:</FormLabel>
-								<Input 
-									type='number' 
-									placeholder='Ingrese su número de DNI'
-									value={inputIdentity}
-									onChange={(e) => setInputIdentity(e.target.value)}/>
-								<FormLabel>Teléfono:</FormLabel>
-								<InputGroup>
-									<InputLeftAddon children='+54' />
+								<FormControl isRequired>
+									<FormLabel>Nombre/s:</FormLabel>
 									<Input 
-										type='tel' 
-										placeholder='Ingrese un número de teléfono'
-										value={inputPhone}
-										onChange={(e) => setInputPhone(e.target.value)}/>
-								</InputGroup>
-								<FormLabel>Domicilio:</FormLabel>
-								<Input 
-									type='adress' 
-									placeholder='Ingrese la dirección del envío'
-									value={inputAdress}
-									onChange={(e) => setInputAdress(e.target.value)}/>
-								<FormLabel>	CP:</FormLabel>
-								<Input 
-									type='post-code' 
-									placeholder='Ingrese el código postal'
-									value={inputPostalCode}
-									onChange={(e) => setInputPostalCode(e.target.value)}/>
-								<FormLabel>Correo electrónico:</FormLabel>
-								<Input 
-									type='email' 
-									placeholder='Ingrese su dirección de email'
-									value={inputEmail}
-									onChange={(e) => setInputEmail(e.target.value)}/>
+										type='name' 
+										placeholder='Ingrese su nombre/s'
+										value={inputName}
+										onChange={(e) => setInputName(e.target.value)}
+									/>
+								</FormControl>
+								<FormControl isRequired>
+									<FormLabel>Apellido/s:</FormLabel>
+									<Input 
+										type='last-name' 
+										placeholder='Ingrese su apellido/s'
+										value={inputLastName}
+										onChange={(e) => setInputLastName(e.target.value)}
+									/>
+								</FormControl>
+								<FormControl isRequired>
+									<FormLabel>Documento:</FormLabel>
+									<Input 
+										type='number' 
+										placeholder='Ingrese su número de DNI'
+										value={inputIdentity}
+										onChange={(e) => setInputIdentity(e.target.value)}
+									/>
+								</FormControl>
+								<FormControl isRequired>
+									<FormLabel>Teléfono:</FormLabel>
+									<InputGroup>
+										<InputLeftAddon children='+54' />
+										<Input 
+											type='tel' 
+											placeholder='Ingrese un número de teléfono'
+											value={inputPhone}
+											onChange={(e) => setInputPhone(e.target.value)}
+										/>
+									</InputGroup>
+								</FormControl>
+								<FormControl isRequired>
+									<FormLabel>Domicilio:</FormLabel>
+									<Input 
+										type='adress' 
+										placeholder='Ingrese la dirección del envío'
+										value={inputAdress}
+										onChange={(e) => setInputAdress(e.target.value)}
+									/>
+								</FormControl>
+								<FormControl isRequired>
+									<FormLabel>	CP:</FormLabel>
+									<Input 
+										type='post-code' 
+										placeholder='Ingrese el código postal'
+										value={inputPostalCode}
+										onChange={(e) => setInputPostalCode(e.target.value)}
+									/>
+								</FormControl>
+								<FormControl isRequired>
+									<FormLabel>Correo electrónico:</FormLabel>
+									<Input 
+										type='email' 
+										placeholder='Ingrese su dirección de email'
+										value={inputEmail}
+										onChange={(e) => setInputEmail(e.target.value)}
+									/>
+								</FormControl>
+								<FormControl isRequired>
+									<Input 
+										type='email'
+										placeholder='Confirme la dirección de email ingresada'
+										value={iEmailConfirm} 
+										onChange={(e) => setIEmailConfirm(e.target.value)}
+									/>
+									{!emailCorrect ? (
+										<FormHelperText>Debe ingresar la misma dirección de correo electrónico</FormHelperText>
+									) : (
+										<FormHelperText>La dirección indicada es correcta.</FormHelperText>
+									)}
+								</FormControl>
+								<FormControl isRequired>
 								<FormLabel>Medio de pago:</FormLabel>
-								<RadioGroup defaultValue='1'>
-									<Stack spacing={5} direction='row'>
-										<Radio value='Credito' onChange={(e) => setInputPay(e.target.value)} >Tarjeta de Crédito</Radio>
-										<Radio value='Debito' onChange={(e) => setInputPay(e.target.value)} >Tarjeta de Débito</Radio>
-										<Radio value='MP' onChange={(e) => setInputPay(e.target.value)}>Mercado Pago</Radio>
-									</Stack>
-								</RadioGroup>
+									<RadioGroup defaultValue='1'>
+										<Stack spacing={5} direction='row'>
+											<Radio value='Credito' onChange={(e) => setInputPay(e.target.value)} >Tarjeta de Crédito</Radio>
+											<Radio value='Debito' onChange={(e) => setInputPay(e.target.value)} >Tarjeta de Débito</Radio>
+											<Radio value='MP' onChange={(e) => setInputPay(e.target.value)}>Mercado Pago</Radio>
+										</Stack>
+									</RadioGroup>
+								</FormControl>
 								<button type='submit' className='buy-end'>COMPRAR</button>
 							</form>
 						</div>
@@ -181,18 +211,3 @@ const CheckOut = () => {
 }
 
 export default CheckOut
-
-// Las ordenes funcionan correctamente y pueden verse en Firestore
-// Pendiente: 
-// -	Swal.fire para modificar alerta ('completar todos los campos')
-// -	Swal.fire para confirmación de compra y tratar de traer data+id para mostrar al usuario
-// -	Tratar de recargar la página post confirmación y dirigirlo al main con carrito vacío
-
-// setInputName('')
-// setInputLastName('')
-// setInputPhone('')
-// setInputIdentity('')
-// setInputAdress('')
-// setInputPostalCode('')
-// setInputEmail('')
-// setInputPay('')

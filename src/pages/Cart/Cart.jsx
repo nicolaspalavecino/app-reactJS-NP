@@ -58,7 +58,7 @@ const Cart = () => {
 									})}
 								</tbody>
 							</table>
-							<h3>Total: $ {totalPrice}</h3>
+							<h3 className='total-price'>Total: $ {totalPrice}</h3>
 							<div className='comprar-container'>
 								<Tooltip hasArrow label='COMPRAR' bg='#634f31'>
 									<Link to={'/checkout'} className='return btn-comprar'>

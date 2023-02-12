@@ -65,3 +65,7 @@
     background-color: #5a482c;
     color: white;
 }
+
+.btn-add-product:active, .add-quantity button:active, .remove:active {
+    scale: 0.9;
+}
