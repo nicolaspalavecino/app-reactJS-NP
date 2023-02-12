@@ -1,6 +1,7 @@
 import './Cart.css'
 import LogoCanasta from '../../img/LogoCanasta.png'
 import LogoCanastaFull from '../../img/LogoCanastaFull.png'
+import EmptyCart from '../../img/EmptyCart.png'
 import Comprar from '../../img/Comprar.png'
 import { CartContext } from '../../context/CartContext'
 import { useContext, useEffect, useState } from 'react'
@@ -58,7 +59,12 @@ const Cart = () => {
 									})}
 								</tbody>
 							</table>
-							<h3 className='total-price'>Total: $ {totalPrice}</h3>
+							<div className='table-foot'>
+								<h3 className='total-price'>Total: $ {totalPrice}</h3>
+								<Tooltip hasArrow label='VACIAR CANASTA' bg='#634f31'>
+									<button className='btn-empty' onClick={() => setCart([])}><img src={EmptyCart} /></button>
+								</Tooltip>
+							</div>
 							<div className='comprar-container'>
 								<Tooltip hasArrow label='COMPRAR' bg='#634f31'>
 									<Link to={'/checkout'} className='return btn-comprar'>

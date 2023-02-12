@@ -31,12 +31,12 @@ const CheckOut = () => {
 
 	const createOrder = async (e) => {
 		e.preventDefault()
-		if (inputPay === '' || emailCorrect === false) {
+		if (emailCorrect === false) {
 				Swal.fire({
 					imageUrl: `${LogoCruz}`,
 					imageHeight: 200,
 					imageWidth: 200,
-					text: 'Por favor, complete todos los campos del formulario.',
+					text: 'La dirección de correo electrónico ingresada no coincide. Inténtelo nuevamente.',
 					showConfirmButton: true,
 				})
 		} else {
@@ -44,7 +44,7 @@ const CheckOut = () => {
 				cart: cart,
 				name: inputName,
 				lastName: inputLastName,
-				phone: inputPhone,
+				phone: '+54 ' + inputPhone,
 				identity: inputIdentity,
 				adress: inputAdress,
 				CP: inputPostalCode,
@@ -57,11 +57,11 @@ const CheckOut = () => {
 				title: 'Verifique sus datos:',
 				html:
 					'<ul>' + 
-						'<li>Nombre y Apellido: ' + '<span>' + `${order.name}` + ' ' + `${order.lastName}` + '</span>' + '</li>' +
-						'<li>DNI: ' + '<span>' + `${order.identity}` + '</span>' + '</li>' + 
-						'<li>Dirección: ' + '<span>' + `${order.adress}` + '</span>' + ' | CP: ' + '<span>' + `${order.CP}` + '</span>' + '</li>' + 
-						'<li>Teléfono: ' + '<span>' + `${order.phone}` + '</span>' + '</li>' + 
-						'<li>Email: ' + '<span>' + `${order.email}` + '</span>' + '</li>' +
+						'<li>Nombre y Apellido: <span>' + `${order.name}` + ' ' + `${order.lastName}` + '</span></li>' +
+						'<li>DNI: <span>' + `${order.identity}` + '</span></li>' + 
+						'<li>Dirección: <span>' + `${order.adress}` + '</span>' + ' | CP: <span>' + `${order.CP}` + '</span></li>' + 
+						'<li>Teléfono: <span>' + `${order.phone}` + '</span></li>' + 
+						'<li>Email: <span>' + `${order.email}` + '</span></li>' +
 					'</ul>',
 				showConfirmButton: true,
 				showCancelButton: true,

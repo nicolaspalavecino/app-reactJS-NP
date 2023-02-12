@@ -95,10 +95,6 @@ button.swal2-confirm.swal2-styled:hover, button.swal2-cancel.swal2-styled:hover,
     color: white;
 }
 
-.buy-end:active {
-    scale: 0.9;
-}
-
 @media (max-width: 480px) {
     .checkout-header .cart-sup img {
         height: 60px;

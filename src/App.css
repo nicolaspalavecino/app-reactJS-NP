@@ -6,3 +6,11 @@
   font-family: 'Nunito', sans-serif;
 }
 
+button:active {
+  scale: 0.9;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}

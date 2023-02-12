@@ -60,7 +60,7 @@ const HandleCartItem = ({ nombre, precio, imagen, id }) => {
             <div className='add-variant'>
                 <div className='add-quantity'>
                     <button onClick={() => addCartItem(id)}>+</button>
-                    <p style={{ color: {span} }}>{quantityPerItem} en Canasta</p>
+                    <p>{quantityPerItem} en Canasta</p>
                     <button onClick={() => decreaseCartItem(id)}>-</button>
                 </div>
                 <button className='remove' onClick={() => removeCartItem(id)}>Eliminar</button>

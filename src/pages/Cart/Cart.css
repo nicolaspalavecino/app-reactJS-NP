@@ -65,3 +65,22 @@ tfoot {
 .btn-comprar img {
     object-fit: contain;
 }
+
+.table-foot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-empty {
+    width: 65px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.btn-empty img {
+    object-fit: contain;
+    height: 100%;
+    border-radius: 50%;
+}
